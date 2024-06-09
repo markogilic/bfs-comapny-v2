@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image img {
+  max-width: 150px;
+
+  height: auto;
+  object-fit: cover;
+}
+.image {
+  margin: 0 36px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: swipe 36s linear infinite;
+}
+.wrapper {
+  display: flex;
+  position: relative;
+}
+.wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  z-index: 1;
+}
+.wrapper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  z-index: 1;
+}
+
+.banner-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
