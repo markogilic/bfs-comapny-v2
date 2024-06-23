@@ -1,5 +1,5 @@
 import React from 'react';
-import testImafe from '@/public/des/review-1.jpg';
+
 import Image from 'next/image';
 import StarReview from './StarReview';
 import { StaticImageData } from 'next/image';
@@ -18,13 +18,13 @@ const StudentCard = ({ student }: StudentProp) => {
 
   return (
     <div>
-      <div className="flex flex-col items-center  bg-card-bg w-[364px] h-[595px] py-6 px-4 rounded-[4px] shadow-md">
-        <div className="w-[166px] h-[166px] rounded-full overflow-hidden relative">
+      <div className="flex flex-col items-center  bg-card-bg md:w-[364px] h-[595px] py-6 px-4 mx-4 rounded-[4px] shadow-md">
+        <div className="md:w-[166px] md:h-[166px] w-[128px] h-[128px] rounded-full overflow-hidden relative">
           <Image src={imageUrl} layout="fill" objectFit="cover" alt="student" />
         </div>
-        <h3 className="text-[24px] font-bold mt-[30px]">{name}</h3>
+        <h3 className="text-[18px] font-bold mt-[16px]">{name}</h3>
         <StarReview value={ratings} />
-        <p className="text-[16px] mt-[10px] text-center">{review}</p>
+        <p className="text-base mt-[10px] text-center leading-5">{review}</p>
       </div>
     </div>
   );

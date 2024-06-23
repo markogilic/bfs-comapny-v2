@@ -1,32 +1,25 @@
+'use client';
 import SubHeading from '../ui/subHeading';
-import StudentCard from '../ui/StudentCard';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
-import { students } from '@/lib/data';
+import EmblaCarousel from '../embla-carousel/EmblaCarousel';
+import { EmblaOptionsType } from 'embla-carousel';
+import { UseScreenWidth } from '@/app/hooks/screen-width';
+import MobileClientSection from './MobileClientSection';
+
+const OPTIONS: EmblaOptionsType = {};
 
 const ClientSection = () => {
+  const width = UseScreenWidth();
   return (
-    <section className="px-[150px] py-[96px] ">
-      <SubHeading>ZADOVOLJNI POLAZNICI</SubHeading>
+    <section className="md:px-[150px] md:py-[96px] px-4 py-12  ">
+      {width < 768 ? (
+        <MobileClientSection />
+      ) : (
+        <>
+          <SubHeading>ZADOVOLJNI POLAZNICI</SubHeading>
 
-      <Carousel className="px-[240px]">
-        <div className="flex">
-          <CarouselContent className="">
-            {students.map((student, index) => (
-              <CarouselItem key={index} className=" lg:basis-1/3">
-                <StudentCard student={student} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </div>
-      </Carousel>
+          <EmblaCarousel options={OPTIONS} />
+        </>
+      )}
     </section>
   );
 };

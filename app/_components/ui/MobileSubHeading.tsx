@@ -11,7 +11,7 @@ const subHeading = ({
   return (
     <h2
       className={clsx(
-        `md:text-[36px] text-center mx-auto font-bold uppercase text-[28px] ${style}`
+        `text-[28px] text-center mx-auto font-bold uppercase ${style}`
       )}
     >
       {children}

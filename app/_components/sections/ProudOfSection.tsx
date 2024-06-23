@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 const ProudOfSection = () => {
   return (
-    <div className=" py-12 px-[150px] border-y-4 ">
+    <div className=" md:py-12 md:px-[150px]  md:border-y-4 border-y-2 py-4 ">
       {/* <SubHeading>PONOSNI NA SARADNJU SA</SubHeading> */}
       <h3 className="text-center text-2xl font-bold">PONOSNI NA SARADNJU</h3>
-      <div className="w-[1500px] mx-auto mt-5 ">
+      <div className="max-w-[1500px] w-full mx-auto mt-5 ">
         <div className="banner-wrapper">
           <div className="wrapper">
             <div className="images">

@@ -4,12 +4,12 @@ import InovacijaImage from '@/public/des/inovativni-pristup.jpg';
 
 const MainSectionThree = () => {
   return (
-    <section className="flex bg-bg-darck gap-[48px]">
-      <div className="w-[50%]">
+    <section className="md:flex bg-bg-darck gap-[48px]">
+      <div className="md:w-[50%]">
         <Image src={InovacijaImage} alt="Inovacija" />
       </div>
-      <div className="flex flex-col items-start  justify-center w-[540px] gap-[48px] ">
-        <h3 className="font-bold text-[36px] text-white uppercase">
+      <div className="flex flex-col items-start  justify-center md:w-[540px] md:gap-[48px] px-4 gap-4 pb-12 pt-6 ">
+        <h3 className="font-bold md:text-[36px] text-[32px] text-white uppercase leading-9 ">
           Inovativni Pristup <br />
           Finansijskom <br /> Kontrolingu i <br /> Menadžmentu
         </h3>

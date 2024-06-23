@@ -16,7 +16,7 @@ const ProgramFrame = ({
   desc,
 }: ProgramFrameProps) => {
   return (
-    <article className="w-[267px] rounded-[4px] overflow-hidden bg-card-bg  flex flex-col justify-between">
+    <article className="w-[267px]  rounded-[4px] overflow-hidden bg-card-bg  flex flex-col justify-between">
       <div>
         <h3 className=" uppercase text-base font-semibold  text-center text-white bg-bg-light">
           {type}
