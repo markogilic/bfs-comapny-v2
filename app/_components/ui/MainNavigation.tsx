@@ -16,7 +16,9 @@ const MainNavigation = () => {
   //     updateWidth();
   //     return () => window.removeEventListener('resize', updateWidth);
   //   }, []);
+
   const width = UseScreenWidth();
+
   if (width < 768) {
     return <MobileNav />;
   }

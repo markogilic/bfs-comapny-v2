@@ -1,7 +1,15 @@
-import React from 'react';
+import ProgramsFrame from './_components/ProgramsFrame';
+import ProudOfSection from '@/app/_components/sections/ProudOfSection';
+import ClientSection from '@/app/_components/sections/ClientSection';
 
 const Programs = () => {
-  return <div className="bg-red-500 h-[900px]">Ovde Idu Progarim</div>;
+  return (
+    <div className="mt-[72px] pt-6 ">
+      <ProgramsFrame />
+      <ProudOfSection />
+      <ClientSection />
+    </div>
+  );
 };
 
 export default Programs;

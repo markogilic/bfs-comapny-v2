@@ -47,6 +47,11 @@ import galleryImage18 from '@/public/gallery_image/IMG-20231016-WA0000.jpg';
 //blog images
 import blogTestImage from '@/public/des/blog-placceholder.jpg';
 
+// it images
+import IntFrontEnd from '@/public/des/uvod_u _frontedn.jpg';
+import HtmlCssJs from '@/public/des/html_css_js.png';
+import reactJS from '@/public/des/reactJs.png';
+
 export const logosUrl = [
   AustrianJuice,
   BigDreams,
@@ -112,6 +117,7 @@ export const topPrograms = [
   {
     id: 1,
     imageUrl: fkzmImage,
+    typeData: 'individual',
     type: 'Individualni programi',
     title: 'FINANSIJSKI KONTROLING ZA MENADŽERE',
     desc: 'Napredovao si na veću poziciju, ideš na bitne sastanke ali i dalje ne znaš sve ključne pojmove iz rezultata poslovanja? Šta je Opex, Capex, Goodwill, povrat investicije? Ovaj program je za tebe!',
@@ -125,6 +131,7 @@ export const topPrograms = [
     id: 2,
     imageUrl: fzpImage,
     type: 'Grupne edukacije',
+    typeData: 'group',
     title: 'FINANSIJSKI za preduzetnike',
     desc: 'Želiš da otvoriš firmu, ali nemaš znanja iz finansija? Vodiš firmu, ali ne znaš koji proizvodi i klijenti su najprofitabilniji? Planiraš novi proizvod, ali ne znaš budući uticaj?',
     stats: {
@@ -136,6 +143,7 @@ export const topPrograms = [
   {
     id: 3,
     imageUrl: emolidImage,
+    typeData: 'group',
     type: 'Grupne edukacije',
     title: 'Emocijalna inteligencija i liderstvo',
     desc: 'Istraživanja pokazuju da 67% veština potrebnih za uspeh lidera zavisi od emocionalne inteligencije. Efikasno vođenje tima više se oslanja na emocije nego na logiku. Naučite više i razvijte liderske veštine.',
@@ -148,6 +156,7 @@ export const topPrograms = [
   {
     id: 4,
     imageUrl: intervjuImage,
+    typeData: 'individual',
     type: 'Individualni programi',
     title: 'Programi pripreme za intervju',
     desc: 'Imaš bitan razgovor za posao? Prijavi se na naš individualni program za pripremu. Poboljšaj CV, saznaj šta te čeka na intervjuu, smanji tremu i povećaj samopouzdanje za bolje rezultate!',
@@ -157,7 +166,94 @@ export const topPrograms = [
       price: '80e',
     },
   },
-] as const;
+  {
+    id: 5,
+    imageUrl: IntFrontEnd,
+    typeData: 'group',
+    type: 'Grupne edukacije',
+    title: 'Uvod u Frontend',
+    desc: 'Ovaj kurs pruža osnovno upoznavanje sa front-end programiranjem, pokrivajući ključne tehnologije kao što su HTML, CSS i JavaScript',
+    stats: {
+      duration: '4 nedelja',
+
+      location: 'Online',
+      price: '150e',
+    },
+    fullDesc: {
+      main: 'Kurs "Uvod u Frontend" je osmišljen da studentima pruži sveobuhvatan uvod u svet web developmenta, sa posebnim fokusom na frontend tehnologije. Cilj kursa je da polaznici steknu osnovna znanja i veštine potrebne za izradu modernih, interaktivnih i responzivnih web sajtova. Tokom kursa, studenti će se upoznati sa ključnim tehnologijama i alatima koje web developeri koriste svakodnevno.',
+      tags: [
+        'Uvod u web development',
+        'HTML i CSS',
+        'JavaScript',
+        'Responsive design',
+        'Git',
+        'Napredne teme',
+      ],
+      list: [
+        'Učenje strukture HTML dokumenta, osnovnih elemenata i atributa.',
+        'Razumevanje osnovnih koncepata CSS-a, kao što su selektori, pravila stilizacije i osnovne tehnike pozicioniranja.',
+        ' Upoznavanje sa osnovnim konceptima JavaScript-a, kao što su promenljive, petlje, uslovni izrazi i manipulacija DOM-a.',
+        'Uvod u principe responzivnog dizajna i korišćenje media queries za prilagođavanje web stranica različitim ekranima.',
+        'Osnove verzionisanja koda kroz Git, uključujući osnovne komande za rad sa repozitorijumima i rad u timskom okruženju.',
+      ],
+    },
+  },
+  {
+    id: 6,
+    imageUrl: HtmlCssJs,
+    typeData: 'group',
+    type: 'Grupne edukacije',
+    title: ' Osnove HTML, CSS, JavaScript',
+    desc: 'Ovaj kurs pruža temeljno upoznavanje sa osnovnim web tehnologijama HTML, CSS i JavaScript, omogućavajući polaznicima da kreiraju i stilizuju interaktivne web stranice.',
+    stats: {
+      duration: '12 nedelja',
+      location: 'Online',
+      price: '350e',
+    },
+    fullDesc: {
+      main: 'Kurs "Osnove HTML, CSS i JavaScripta" pruža temeljno razumevanje tri ključne tehnologije neophodne za razvoj modernih web stranica. Ovaj kurs je namenjen apsolutnim početnicima u web developmentu i cilj mu je da polaznike uvede u svet frontend tehnologija i pripremi ih za dalje napredovanje u ovoj oblasti.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Web development', 'Frontend'],
+      list: [
+        'Osnove HTML-a, uključujući strukturu dokumenata, osnovne elemente i njihove atribute, kao i semantičko označavanje sadržaja.',
+        'Osnovni koncepte CSS-a, kao što su selektori, pravila stilizacije, boje, pozadine i pozicioniranje elemenata na stranici',
+        'Ucenje JavaScripta kroz osnovne koncepte poput promenljivih, tipova podataka, upravljanja tokom izvršavanja (if-else strukture, petlje) i osnovne manipulacije DOM-om (Document Object Model).',
+        'Kroz praktične vežbe, polaznici će primeniti svoje znanje iz HTML-a, CSS-a i JavaScripta, razvijajući jednostavne web stranice i interaktivne elemente',
+      ],
+    },
+  },
+  {
+    id: 7,
+    imageUrl: reactJS,
+    typeData: 'group',
+    type: 'Grupne edukacije',
+    title: 'Osnove React JS',
+    desc: 'Ovaj kurs pruža osnovno upoznavanje sa React JS bibliotekom, omogućavajući polaznicima da kreiraju interaktivne web aplikacije.',
+    stats: {
+      duration: '12 nedelja',
+      location: 'Online',
+      price: '350e',
+    },
+    fullDesc: {
+      main: 'Kurs "Osnove ReactJS-a" je namenjen polaznicima koji žele da se upoznaju sa popularnim JavaScript framework-om za izgradnju korisničkih interfejsa.Tokom kursa, učesnici će naučiti osnovne koncepte React-a, kao što su komponente, stanje (state) i svojstva (props), koji su ključni za razvoj modernih web aplikacija.Fokus će biti na praktičnim vežbama i projektima, gde će polaznici implementirati naučene veštine u stvarnim scenarijima.Kurs takođe obuhvata upotrebu JSX-a, jezika za pisanje HTML-a unutar JavaScripta, kao i osnove rada sa React-ovim životnim ciklusom komponenti.Na kraju kursa, polaznici će biti osposobljeni da samostalno razvijaju jednostavne React aplikacije i da nastave sa naprednijim temama u ReactJS-u.',
+      tags: [
+        'ReactJS',
+        'JavaScript',
+        'Frontend',
+        'Web development',
+        'React Comonents',
+        'React State',
+        'React Props',
+      ],
+      list: [
+        'Upoznavanje sa osnovnim konceptima React-a, kao što su komponente, stanje (state) i svojstva (props).',
+        'Korišćenje JSX-a za pisanje HTML-a unutar JavaScript-a.',
+        'Osnove rada sa React-ovim životnim ciklusom komponenti.',
+        'Praktične vežbe i projekti za primenu naučenih veština u stvarnim scenarijima.',
+        'Razvoj jednostavnih React aplikacija i interaktivnih elemenata.',
+      ],
+    },
+  },
+];
 
 // gallery images
 
@@ -251,6 +347,16 @@ export const galleryImages = [
     id: 18,
     imageUrl: galleryImage18,
     title: 'Ucesnici edukacije emocionalne inteligencije u pregovaranju',
+  },
+  {
+    id: 19,
+    imageUrl: galleryImage9,
+    title: 'BFS Bookmarker ',
+  },
+  {
+    id: 20,
+    imageUrl: galleryImage7,
+    title: 'Edukacija zaposlenih utice na rezultate poslovanja ',
   },
 ];
 

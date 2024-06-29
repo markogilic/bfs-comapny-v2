@@ -78,3 +78,53 @@
     width: 150px;
   }
 }
+
+.galleryContainer {
+  margin: 0 auto;
+  width: 1140px;
+  height: 1140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 16px 16px;
+  grid-template-areas:
+    'image_0 image_0 image_1 image_2'
+    'image_0 image_0 image_3 image_4'
+    'image_5 image_6 image_9 image_9'
+    'image_7 image_8 image_9 image_9';
+}
+
+.image_0 {
+  grid-area: image_0;
+}
+.image_1 {
+  grid-area: image_1;
+}
+.image_2 {
+  grid-area: image_2;
+}
+.image_3 {
+  grid-area: image_3;
+}
+.image_4 {
+  grid-area: image_4;
+}
+.image_5 {
+  grid-area: image_5;
+}
+.image_6 {
+  grid-area: image_6;
+}
+.image_7 {
+  grid-area: image_7;
+}
+.image_8 {
+  grid-area: image_8;
+}
+.image_9 {
+  grid-area: image_9;
+}
+
+.myChekbox {
+  accent-color: #ec6e15;
+}

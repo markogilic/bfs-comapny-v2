@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 const NavigateToProgram = () => {
   return (
-    <section className="sm:flex justify-center items-center bg-card-bg pt-12">
+    <section className="sm:flex justify-center items-center bg-card-bg sm:pt-0 pt-12">
       <div className="sm:w-1/2 sm:ml-[150px] border  px-4 mb-8 ">
-        <h3 className="sm:text-[36px] font-bold uppercase sm:mx-auto leading-8 text-[28px]">
+        <h3 className="sm:text-[36px] font-bold uppercase sm:mx-auto leading-10 text-[28px]">
           Istražite programe <br /> koji će doprineti <br /> vašem poslovanju
         </h3>
         <Link
