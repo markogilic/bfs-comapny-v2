@@ -20,7 +20,7 @@ interface ProgramProps {
     location: string;
     price: string;
   };
-  fullDesc: {
+  fullDesc?: {
     main: string;
     tags: string[];
     list: string[];
@@ -55,7 +55,7 @@ export function getProgramsByType(type: string, array: ProgramProps[]) {
   return programs;
 }
 
-export function getProgramById(array: { id: number }[], id: number) {
+export function getProgramById(array: ProgramProps[], id: number) {
   const program = array.find((program) => program.id === id);
   return program;
 }
