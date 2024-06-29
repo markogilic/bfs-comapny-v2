@@ -4,6 +4,7 @@ import SubHeading from '@/app/_components/ui/subHeading';
 import ProgramForm from '@/app/_components/forms/ProgramForm';
 interface ProgramProps {
   program: {
+    id: number;
     imageUrl: StaticImageData;
     typeData: string;
     type: string;
@@ -24,6 +25,9 @@ interface ProgramProps {
 
 const SingleProgramFrame = ({ program }: ProgramProps) => {
   const { title, stats, fullDesc, type } = program;
+
+  console.log(program);
+
   return (
     <div className="md:px-[150px] md:py-[96px] pt-6 px-4 pb-12">
       <SubHeading>{title}</SubHeading>
