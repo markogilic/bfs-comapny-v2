@@ -4,7 +4,6 @@ import SubHeading from '@/app/_components/ui/subHeading';
 import ProgramForm from '@/app/_components/forms/ProgramForm';
 interface ProgramProps {
   program: {
-    id: number;
     imageUrl: StaticImageData;
     typeData: string;
     type: string;
