@@ -2,30 +2,30 @@ import React from 'react';
 import { StaticImageData } from 'next/image';
 import SubHeading from '@/app/_components/ui/subHeading';
 import ProgramForm from '@/app/_components/forms/ProgramForm';
+
 interface ProgramProps {
-  program: {
-    id: number;
-    imageUrl: StaticImageData;
-    typeData: string;
-    type: string;
-    title: string;
-    desc: string;
-    stats: {
-      duration: string;
-      location: string;
-      price: string;
-    };
-    fullDesc?: {
-      main: string;
-      tags: string[];
-      listTitle?: string;
-      list: string[];
-      final?: string;
-    };
+  id: number;
+  imageUrl: StaticImageData;
+  typeData: string;
+  type: string;
+  title: string;
+  desc: string;
+  stats: {
+    duration: string;
+    location: string;
+    price: string;
+  };
+  fullDesc: {
+    main: string;
+    tags?: string[];
+    titleList?: string;
+    list: string[];
+    optionalFileds?: string[];
+    final?: string;
   };
 }
 
-const SingleProgramFrame = ({ program }: ProgramProps) => {
+const SingleProgramFrame = ({ program }: { program: ProgramProps }) => {
   const { title, stats, fullDesc, type } = program;
 
   return (
@@ -45,9 +45,9 @@ const SingleProgramFrame = ({ program }: ProgramProps) => {
             *plaćanje se vrši u dinarskoj protivvrednosti po srednjem <br />
             kursu Narodne banke Srbije na dan plaćannja
           </p>
-          <p className="mt-6">{fullDesc?.main}</p>
+          <p className="mt-6">{fullDesc.main}</p>
           <p className="mt-6">
-            {fullDesc?.listTitle ? fullDesc.listTitle : 'Kurs obuhvata:'}
+            {fullDesc?.titleList ? fullDesc.titleList : 'Kurs obuhvata:'}
           </p>
           <ul className="list-disc pl-4">
             {fullDesc?.list.map((item, index) => (

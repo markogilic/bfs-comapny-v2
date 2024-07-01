@@ -20,10 +20,13 @@ interface ProgramProps {
     location: string;
     price: string;
   };
-  fullDesc?: {
+  fullDesc: {
     main: string;
-    tags: string[];
+    tags?: string[];
+    titleList?: string;
     list: string[];
+    optionalFileds?: string[];
+    final?: string;
   };
 }
 
