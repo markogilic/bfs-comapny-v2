@@ -126,18 +126,46 @@ export const topPrograms = [
       location: ' Online',
       price: '350e',
     },
+    fullDesc: {
+      main: 'Ukoliko želiš dodatna znanja iz finansijskog kontrolinga i rezultata poslovanja uz mentora koji će pratiti tvoj razvoj, ovo je program za tebe. Bez obzira da li gradiš karijeru u oblasti finansija ili ne, ova znanja će upotpuniti tvoj portfolio menadžera, a individualni rad sa mentorom pružiće ti nove vidike i prilike u budućnosti',
+      tags: [],
+      titleList:
+        'Program je prilagodjen tebi i tvom nivou poznavanja finansija, ali neke od ključnih tema koje ćeš naučiti jesu:',
+      list: [
+        'Uvod u finansijski kontroling (funkcija u organizaciji, odgovornosti, opšti pojmovi i skraćenice: BS, BU, BI, BUD, B2B,CF, EX, OPEX, GM...)',
+        'Mesečni paket izvestavanja profitabilnosti kompanije (P&L, rezultati poslovanja, prezentacija poslovanja, prikaz rezultata u odnosu na budžet, na forcast, na prethodnu godinu...)',
+        'CashFlow, Zalihe i Potraživanja (Bilans stanja)',
+        'Sales Controling (promet, prihod, pdv, nabavna vrednost, rabati, profitabilnot robne grupe/kupca);',
+      ],
+      final:
+        'Mentorstva su savremeni način učenja koji daju najbolje rezultate. Podrška koju ćeš imati tokom trajanja programa kroz zadatke, diskusije, pitanja i odgovore dodatno će unaprediti tvoje znanje i stvoriti uslove za napredovanje.',
+    },
   },
   {
     id: 2,
     imageUrl: fzpImage,
-    type: 'Grupne edukacije',
+    type: 'Grupni program',
     typeData: 'group',
-    title: 'FINANSIJSKI za preduzetnike',
+    title: 'finansije za preduzetnike',
     desc: 'Želiš da otvoriš firmu, ali nemaš znanja iz finansija? Vodiš firmu, ali ne znaš koji proizvodi i klijenti su najprofitabilniji? Planiraš novi proizvod, ali ne znaš budući uticaj?',
     stats: {
-      duration: '4 Ssesije po 1,5h',
+      duration: '3 radionice po 4h',
       location: ' Online',
-      price: '250e',
+      price: '180e',
+    },
+    fullDesc: {
+      main: 'Želiš da otvoriš firmu, ali nemaš znanja iz finansija, o fakturama, porezima, PDV-u? Vodiš firmu ali ne znaš na kojim proizvodima zaradjuješ i koliko, koji su klijenti najprofitabilniji?Razmišljaš da uvedeš novi proizvod ili uslugu ali ne znaš kako će to uticati na poslovanje u budućnosti? Ukoliko imaš slična pitanja u glavi, naše radionice će ti pomoći da dodješ do odgovora. Cilj ove edukacije je unapredjenje tvog poslovanja, sticanje novih znanja i veština u oblasti finansija.',
+      tags: [],
+      titleList: 'Neke od ključnih tema koje ćeš naučiti na ovoj edukaciji su:',
+      list: [
+        'Uvod u finansije – prihod, fakture, pdv, marža, zarada;',
+        'Šire sagledavanje biznisa – profitabilnost proizvoda, klijenata, upravljanje troškovima;',
+        'Analiza biznisa kroz rezultate i brojke – zarada na kraju meseca, prostor za unapredjenje;',
+        'Budžet – definisanje planova za rast biznisa;',
+        'Postavka parametara za praćenje poslovanja;',
+      ],
+      final:
+        'Podrška koju ćeš imati tokom trajanja programa kroz zadatke, diskusije, pitanja i odgovore dodatno će unaprediti tvoje znanje, a time i tvoje poslovanje.',
     },
   },
   {
@@ -148,24 +176,29 @@ export const topPrograms = [
     title: 'Emocijalna inteligencija i liderstvo',
     desc: 'Istraživanja pokazuju da 67% veština potrebnih za uspeh lidera zavisi od emocionalne inteligencije. Efikasno vođenje tima više se oslanja na emocije nego na logiku. Naučite više i razvijte liderske veštine.',
     stats: {
-      duration: 'Jednodnevna edukacija',
-      location: 'Uzivo',
-      price: '14900 RSD',
+      duration: '2 radionice po 3h',
+      location: 'Online',
+      price: '120e',
+    },
+    fullDesc: {
+      main: 'Istraživanja pokazuju da 67% svih veština koje su lideru potrebne za poslovni rezultat i uspeh, zasnivaju se na emocionalnoj inteligenciji. Zašto je to tako? Uspešno vodjenje tima je više emotivan, nego kongitivan proces, jer lideri imaju bolje rezultate u motivaciji članova tima putem emocije, u odnosu na korišćenje logike. Ukoliko želiš da naučiš više o emocionalnoj inteligenciji i efikasnom vodjenju timova, da uložiš u razvoj svojih liderskih veština, ovo je prava edukacija za tebe.',
+      tags: [],
+      titleList: 'Na edukaciji ćeš naučiti:',
+      list: [
+        'Šta je emocionalna inteligencija i kako ona utiče na biznis;',
+        'Koja su četiri stuba emocionalne inteligencije i na koji način oni tranformišu neuspeh u uspeh;',
+        'Šta znači biti asertivan, empatičan i koliko to pomaže u komunikaciji lidera sa svojim timom;',
+        'Koji stilovi liderstva postoje i kako se oni menjaju;',
+        'Koje su najznačajnije liderske osobine;',
+        'Šta je potrebno za razvoj emocionalno inteligentnih timova i organizacija;',
+        'Kako dati kontruktivan feedback;',
+        'Koji je značaj emocionalne inteligencije za kreiranje korporativne kulture;',
+      ],
+      final:
+        'Lakše se uči uz primere iz prakse i zadatke, pa je to neizostavni deo naših edukacija. Kako bismo što bolje upoznali tebe kao lidera, na edukaciji radi se test emocionalne inteligencije i test stila liderstva. Na kraju edukacije obavezna je završna diskusija, a nakon toga i dodale potvrda o uspešno završenoj edukaciji.',
     },
   },
-  {
-    id: 4,
-    imageUrl: intervjuImage,
-    typeData: 'individual',
-    type: 'Individualni programi',
-    title: 'Programi pripreme za intervju',
-    desc: 'Imaš bitan razgovor za posao? Prijavi se na naš individualni program za pripremu. Poboljšaj CV, saznaj šta te čeka na intervjuu, smanji tremu i povećaj samopouzdanje za bolje rezultate!',
-    stats: {
-      duration: '1 sesija od 2 sata',
-      location: ' Online',
-      price: '80e',
-    },
-  },
+
   {
     id: 5,
     imageUrl: IntFrontEnd,
@@ -189,6 +222,7 @@ export const topPrograms = [
         'Git',
         'Napredne teme',
       ],
+      titleList: '',
       list: [
         'Učenje strukture HTML dokumenta, osnovnih elemenata i atributa.',
         'Razumevanje osnovnih koncepata CSS-a, kao što su selektori, pravila stilizacije i osnovne tehnike pozicioniranja.',
@@ -196,6 +230,7 @@ export const topPrograms = [
         'Uvod u principe responzivnog dizajna i korišćenje media queries za prilagođavanje web stranica različitim ekranima.',
         'Osnove verzionisanja koda kroz Git, uključujući osnovne komande za rad sa repozitorijumima i rad u timskom okruženju.',
       ],
+      final: '',
     },
   },
   {
@@ -212,6 +247,7 @@ export const topPrograms = [
     },
     fullDesc: {
       main: 'Kurs "Osnove HTML, CSS i JavaScripta" pruža temeljno razumevanje tri ključne tehnologije neophodne za razvoj modernih web stranica. Ovaj kurs je namenjen apsolutnim početnicima u web developmentu i cilj mu je da polaznike uvede u svet frontend tehnologija i pripremi ih za dalje napredovanje u ovoj oblasti.',
+      titleList: '',
       tags: ['HTML', 'CSS', 'JavaScript', 'Web development', 'Frontend'],
       list: [
         'Osnove HTML-a, uključujući strukturu dokumenata, osnovne elemente i njihove atribute, kao i semantičko označavanje sadržaja.',
@@ -219,6 +255,7 @@ export const topPrograms = [
         'Ucenje JavaScripta kroz osnovne koncepte poput promenljivih, tipova podataka, upravljanja tokom izvršavanja (if-else strukture, petlje) i osnovne manipulacije DOM-om (Document Object Model).',
         'Kroz praktične vežbe, polaznici će primeniti svoje znanje iz HTML-a, CSS-a i JavaScripta, razvijajući jednostavne web stranice i interaktivne elemente',
       ],
+      final: '',
     },
   },
   {
@@ -244,6 +281,7 @@ export const topPrograms = [
         'React State',
         'React Props',
       ],
+      titleList: '',
       list: [
         'Upoznavanje sa osnovnim konceptima React-a, kao što su komponente, stanje (state) i svojstva (props).',
         'Korišćenje JSX-a za pisanje HTML-a unutar JavaScript-a.',
@@ -251,6 +289,7 @@ export const topPrograms = [
         'Praktične vežbe i projekti za primenu naučenih veština u stvarnim scenarijima.',
         'Razvoj jednostavnih React aplikacija i interaktivnih elemenata.',
       ],
+      final: '',
     },
   },
 ];

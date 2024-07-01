@@ -18,15 +18,15 @@ interface ProgramProps {
     fullDesc?: {
       main: string;
       tags: string[];
+      listTitle?: string;
       list: string[];
+      final?: string;
     };
   };
 }
 
 const SingleProgramFrame = ({ program }: ProgramProps) => {
   const { title, stats, fullDesc, type } = program;
-
-  console.log(program);
 
   return (
     <div className="md:px-[150px] md:py-[96px] pt-6 px-4 pb-12">
@@ -46,12 +46,15 @@ const SingleProgramFrame = ({ program }: ProgramProps) => {
             kursu Narodne banke Srbije na dan plaćannja
           </p>
           <p className="mt-6">{fullDesc?.main}</p>
-          <p className="mt-6">Kurs obuhvata:</p>
+          <p className="mt-6">
+            {fullDesc?.listTitle ? fullDesc.listTitle : 'Kurs obuhvata:'}
+          </p>
           <ul className="list-disc pl-4">
             {fullDesc?.list.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
+          {fullDesc?.final && <p className="mt-6">{fullDesc.final}</p>}
         </div>
         {/* form compnent */}
         <div className="md:w-1/2 w-full mt-8 md:mt-0">
