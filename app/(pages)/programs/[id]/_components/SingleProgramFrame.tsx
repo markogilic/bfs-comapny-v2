@@ -26,7 +26,7 @@ interface ProgramProps {
 }
 
 const SingleProgramFrame = ({ program }: { program: ProgramProps }) => {
-  const { title, stats, fullDesc, type } = program;
+  const { title, stats, fullDesc, typeData } = program;
 
   return (
     <div className="md:px-[150px] md:py-[96px] pt-6 px-4 pb-12">
@@ -34,8 +34,8 @@ const SingleProgramFrame = ({ program }: { program: ProgramProps }) => {
       <div className="md:flex md:mt-12 mt-6">
         <div className="md:w-1/2">
           <p className="font-semibold">
-            {type === 'individual'
-              ? 'Individualni program 1:1'
+            {typeData === 'individual'
+              ? 'Individualni program uz podršku mentora'
               : 'Grupni program'}
           </p>
           <p className="font-semibold"> Trajanje: {stats.duration}</p>
@@ -49,7 +49,7 @@ const SingleProgramFrame = ({ program }: { program: ProgramProps }) => {
           <p className="mt-6">
             {fullDesc?.titleList ? fullDesc.titleList : 'Kurs obuhvata:'}
           </p>
-          <ul className="list-disc pl-4">
+          <ul className="list-disc pl-10 mt-2">
             {fullDesc?.list.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

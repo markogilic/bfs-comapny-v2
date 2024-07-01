@@ -131,7 +131,7 @@ const ProgramForm = ({ programName }: { programName: string }) => {
           htmlFor="phone"
           className={errors.phone ? 'text-red-500' : 'text-black'}
         >
-          Broj Telefona:
+          Broj telefona:
         </label>
         <input
           {...register('phone', { required: true })}

@@ -118,13 +118,13 @@ export const topPrograms = [
     id: 1,
     imageUrl: fkzmImage,
     typeData: 'individual',
-    type: 'Individualni programi',
+    type: 'Individualni program ',
     title: 'FINANSIJSKI KONTROLING ZA MENADŽERE',
     desc: 'Napredovao si na veću poziciju, ideš na bitne sastanke ali i dalje ne znaš sve ključne pojmove iz rezultata poslovanja? Šta je Opex, Capex, Goodwill, povrat investicije? Ovaj program je za tebe!',
     stats: {
-      duration: '4 Ssesije po 1,5h',
+      duration: '4 nedelje',
       location: ' Online',
-      price: '350e',
+      price: '250e',
     },
     fullDesc: {
       main: 'Ukoliko želiš dodatna znanja iz finansijskog kontrolinga i rezultata poslovanja uz mentora koji će pratiti tvoj razvoj, ovo je program za tebe. Bez obzira da li gradiš karijeru u oblasti finansija ili ne, ova znanja će upotpuniti tvoj portfolio menadžera, a individualni rad sa mentorom pružiće ti nove vidike i prilike u budućnosti',
@@ -138,7 +138,7 @@ export const topPrograms = [
         'Sales Controling (promet, prihod, pdv, nabavna vrednost, rabati, profitabilnot robne grupe/kupca);',
       ],
       final:
-        'Mentorstva su savremeni način učenja koji daju najbolje rezultate. Podrška koju ćeš imati tokom trajanja programa kroz zadatke, diskusije, pitanja i odgovore dodatno će unaprediti tvoje znanje i stvoriti uslove za napredovanje.',
+        'Program se realizuje kroz interaktivna predavanja, studije slučaja, praktične vežbe i diskusije. Polaznici će imati priliku da rade na realnim primerima iz poslovne prakse i steknu konkretna znanja i veštine koje mogu odmah primeniti u svom radu.',
       optionalFileds: [],
     },
   },
@@ -150,20 +150,23 @@ export const topPrograms = [
     title: 'finansije za preduzetnike',
     desc: 'Želiš da otvoriš firmu, ali nemaš znanja iz finansija? Vodiš firmu, ali ne znaš koji proizvodi i klijenti su najprofitabilniji? Planiraš novi proizvod, ali ne znaš budući uticaj?',
     stats: {
-      duration: '3 radionice po 4h',
+      duration: '3 nedelje',
       location: ' Online',
       price: '180e',
     },
     fullDesc: {
-      main: 'Želiš da otvoriš firmu, ali nemaš znanja iz finansija, o fakturama, porezima, PDV-u? Vodiš firmu ali ne znaš na kojim proizvodima zaradjuješ i koliko, koji su klijenti najprofitabilniji?Razmišljaš da uvedeš novi proizvod ili uslugu ali ne znaš kako će to uticati na poslovanje u budućnosti? Ukoliko imaš slična pitanja u glavi, naše radionice će ti pomoći da dodješ do odgovora. Cilj ove edukacije je unapredjenje tvog poslovanja, sticanje novih znanja i veština u oblasti finansija.',
+      main: 'Ovaj program je osmišljen da pruži preduzetnicima osnovna i napredna znanja iz oblasti finansija kako bi efikasno upravljali svojim poslovanjem. Program je namenjen preduzetnicima, vlasnicima malih i srednjih preduzeća, kao i svima koji razmišljaju o pokretanju sopstvenog biznisa i žele da steknu čvrste finansijske osnove za uspešno poslovanje.',
       tags: [],
-      titleList: 'Neke od ključnih tema koje ćeš naučiti na ovoj edukaciji su:',
+      titleList: 'Sadržaj programa:',
       list: [
         'Uvod u finansije – prihod, fakture, pdv, marža, zarada;',
         'Šire sagledavanje biznisa – profitabilnost proizvoda, klijenata, upravljanje troškovima;',
         'Analiza biznisa kroz rezultate i brojke – zarada na kraju meseca, prostor za unapredjenje;',
         'Budžet – definisanje planova za rast biznisa;',
         'Postavka parametara za praćenje poslovanja;',
+        'Tehnike za praćenje i upravljanje tokovima gotovine;',
+        'Strategije za povećanje prihoda;',
+        'Optimizacija troškova poslovanja;',
       ],
       final:
         'Podrška koju ćeš imati tokom trajanja programa kroz zadatke, diskusije, pitanja i odgovore dodatno će unaprediti tvoje znanje, a time i tvoje poslovanje.',
@@ -178,7 +181,7 @@ export const topPrograms = [
     title: 'Emocijalna inteligencija i liderstvo',
     desc: 'Istraživanja pokazuju da 67% veština potrebnih za uspeh lidera zavisi od emocionalne inteligencije. Efikasno vođenje tima više se oslanja na emocije nego na logiku. Naučite više i razvijte liderske veštine.',
     stats: {
-      duration: '2 radionice po 3h',
+      duration: 'Jednodnevna edukacija',
       location: 'Online',
       price: '120e',
     },
@@ -210,7 +213,7 @@ export const topPrograms = [
     title: 'Uvod u Frontend',
     desc: 'Ovaj kurs pruža osnovno upoznavanje sa front-end programiranjem, pokrivajući ključne tehnologije kao što su HTML, CSS i JavaScript',
     stats: {
-      duration: '4 nedelja',
+      duration: '4 nedelje',
 
       location: 'Online',
       price: '150e',
@@ -306,9 +309,9 @@ export const topPrograms = [
     title: 'Program mentorstva',
     desc: '"Program mentorstva" nudi podršku za razvoj profesionalnih veština kroz individualni pristup. Namenjen je profesionalcima koji žele da unaprede tehničke, liderske ili komunikacione veštine.',
     stats: {
-      duration: 'jedan mesec',
+      duration: '4 nedelje',
       location: 'Online',
-      price: 'na upit',
+      price: '200e',
     },
     fullDesc: {
       main: 'Otkrijte svoj puni potencijal kroz naš sveobuhvatni "Program mentorstva". Ovaj program je osmišljen da pruži prilagođenu podršku i vođenje za razvoj specifičnih veština koje su ključne za vaš lični i profesionalni napredak.',
