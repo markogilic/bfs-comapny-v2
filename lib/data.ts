@@ -19,9 +19,9 @@ import Student7 from '@/public/des/review-7.jpg';
 //image of  popular programs
 
 import fkzmImage from '@/public/des/programme-3.jpg';
-import fzpImage from '@/public/des/programme-4.jpg';
+import fzpImage from '@/public/des/programme-7.jpg';
 import emolidImage from '@/public/des/programme-2.jpg';
-import intervjuImage from '@/public/des/programme-1.jpg';
+import programMentorstva from '@/public/des/programme-4.jpg';
 
 //gallery images
 
@@ -139,6 +139,7 @@ export const topPrograms = [
       ],
       final:
         'Mentorstva su savremeni način učenja koji daju najbolje rezultate. Podrška koju ćeš imati tokom trajanja programa kroz zadatke, diskusije, pitanja i odgovore dodatno će unaprediti tvoje znanje i stvoriti uslove za napredovanje.',
+      optionalFileds: [],
     },
   },
   {
@@ -166,6 +167,7 @@ export const topPrograms = [
       ],
       final:
         'Podrška koju ćeš imati tokom trajanja programa kroz zadatke, diskusije, pitanja i odgovore dodatno će unaprediti tvoje znanje, a time i tvoje poslovanje.',
+      optionalFileds: [],
     },
   },
   {
@@ -196,6 +198,7 @@ export const topPrograms = [
       ],
       final:
         'Lakše se uči uz primere iz prakse i zadatke, pa je to neizostavni deo naših edukacija. Kako bismo što bolje upoznali tebe kao lidera, na edukaciji radi se test emocionalne inteligencije i test stila liderstva. Na kraju edukacije obavezna je završna diskusija, a nakon toga i dodale potvrda o uspešno završenoj edukaciji.',
+      optionalFileds: [],
     },
   },
 
@@ -231,6 +234,7 @@ export const topPrograms = [
         'Osnove verzionisanja koda kroz Git, uključujući osnovne komande za rad sa repozitorijumima i rad u timskom okruženju.',
       ],
       final: '',
+      optionalFileds: [],
     },
   },
   {
@@ -256,6 +260,7 @@ export const topPrograms = [
         'Kroz praktične vežbe, polaznici će primeniti svoje znanje iz HTML-a, CSS-a i JavaScripta, razvijajući jednostavne web stranice i interaktivne elemente',
       ],
       final: '',
+      optionalFileds: [],
     },
   },
   {
@@ -290,6 +295,40 @@ export const topPrograms = [
         'Razvoj jednostavnih React aplikacija i interaktivnih elemenata.',
       ],
       final: '',
+      optionalFileds: [],
+    },
+  },
+  {
+    id: 8,
+    imageUrl: programMentorstva,
+    typeData: 'individual',
+    type: 'Individualni programi',
+    title: 'Program mentorstva',
+    desc: '"Program mentorstva" nudi podršku za razvoj profesionalnih veština kroz individualni pristup. Namenjen je profesionalcima koji žele da unaprede tehničke, liderske ili komunikacione veštine.',
+    stats: {
+      duration: 'jedan mesec',
+      location: 'Online',
+      price: 'na upit',
+    },
+    fullDesc: {
+      main: 'Otkrijte svoj puni potencijal kroz naš sveobuhvatni "Program mentorstva". Ovaj program je osmišljen da pruži prilagođenu podršku i vođenje za razvoj specifičnih veština koje su ključne za vaš lični i profesionalni napredak.',
+      titleList: 'Šta možete očekivati:',
+      list: [
+        'Individualizovani pristup - Radite jedan-na-jedan sa iskusnim mentorima koji će vam pomoći da identifikujete i razvijete svoje ključne veštine.',
+        'Praktična primena - Stičete praktično iskustvo kroz realne projekte i izazove koji su prilagođeni vašim interesovanjima i ciljevima.',
+        'Fleksibilno učenje - Program je dizajniran da se prilagodi vašem rasporedu, omogućavajući vam da učite u tempu koji vam najviše odgovara.',
+        'Povratne informacije - Redovni sastanci sa mentorima za evaluaciju vašeg napretka i davanje konstruktivnih povratnih informacija.',
+      ],
+      final:
+        'Ovaj program je namenjen profesionalcima svih nivoa koji žele da unaprede specifične veštine, bilo da su u pitanju tehničke veštine, liderske sposobnosti, komunikacione veštine ili bilo koje druge oblasti od interesa.',
+      optionalFileds: [
+        'Liderske veštine',
+        'Mentorstvo za preduzetnike',
+        'Karijerno mentorstvo',
+        'Mentorstvo za žene u biznisu',
+        'HTML, CSS, JavaScript',
+        'ReactJS',
+      ],
     },
   },
 ];

@@ -24,10 +24,10 @@ const ProgramFrame = ({ program }: { program: ProgramFrameProps }) => {
           {type}
         </h3>
         <Image src={imageUrl} alt={title} className="bg-white" />
-        <h3 className="font-bold text-base text-center mt-4 p-3 uppercase">
+        <h3 className="font-bold text-base text-center mt-4 p-3 uppercase h-[72px]">
           {title}
         </h3>
-        <p className="text-sm text-center md:mt-4 px-4">{desc}</p>
+        <p className="text-sm text-center md:mt-2 px-4">{desc}</p>
       </div>
       <div className="flex flex-col mb-4 ">
         <ul className="list-disc ml-[35px] my-[16px]">

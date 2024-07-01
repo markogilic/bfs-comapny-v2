@@ -8,11 +8,11 @@ const AboutUs = () => {
   return (
     <section className=" bg-card-bg ">
       <div className="md:max-w-[1440px]  md:px-[150px] md:py-[96px] mx-auto w-full px-4 py-12 flex-col gap-8 ">
-        <div className="md:flex md:justify-between flex flex-col gap-8  ">
-          <h3 className="text-4xl font-semibold md:hidden block">O NAM</h3>
+        <div className="md:flex md:justify-between flex md:flex-row flex-col gap-8  ">
+          <h3 className="text-4xl font-semibold md:hidden block">O NAMA</h3>
           <Image src={AboutUsImage} alt="About Us" />
-          <div className="md:px-[60px] flex flex-col gap-4 flex-wrap">
-            <h3 className="text-4xl font-semibold hidden md:block">O NAM</h3>
+          <div className="flex  gap-4 flex-wrap">
+            <h3 className="text-4xl font-semibold hidden md:block">O NAMA</h3>
             <p className="text-base">
               Naša misija je duboko utemeljena na razumevanju potreba klijenata,
               osluškivanju tržišta i ulaganju u zaposlene i spoljne saradnike.
@@ -36,7 +36,7 @@ const AboutUs = () => {
           <h3 className="text-2xl font-semibold mt-12 text-center">NAŠ TIM</h3>
           <div className="md:flex md:flex-row flex flex-col justify-between gap-6 mt-12">
             {/* left card */}
-            <div className="md:flex flex flex-col  bg-white md:p-8 p-4 md:max-w-[540px] ">
+            <div className="md:flex-row flex flex-col  bg-white md:p-8 p-4 md:max-w-[540px] ">
               {/* image part */}
               <div className="md:w-1/3 flex flex-col justify-center items-center gap-2">
                 <Image
@@ -44,13 +44,13 @@ const AboutUs = () => {
                   alt="Mira Matic"
                   className="w-[166px] h-[166px] rounded-full"
                 />
-                <p className="text-lg font-semibold">Mirjana Matić</p>
+                <p className="text-lg font-semibold">Mirjana Gilić</p>
                 <p className="text-center italic mb-6 md:mb-0">
                   Osnivač i Direktor BFS Company
                 </p>
               </div>
               {/* text part */}
-              <div className=" md:w-2/3 pl-7 text-center">
+              <div className=" md:w-2/3 pl-7 md:text-start text-center">
                 Dugi niz godina bila je deo velikih kompanija, Mercator-S doo i
                 Tehnomanija doo, na rukovodećim pozicijama u veleprodaji i
                 finansijskom kontrolingu, gde je stekla neprocenjivo iskustvo i
@@ -73,7 +73,7 @@ const AboutUs = () => {
                 <p className="text-base italic ">IT Konsultant</p>
               </div>
               {/* text part */}
-              <div className="md:w-2/3 pl-7 text-base text-center mt-6 md:mt-0">
+              <div className="md:w-2/3 md:text-start pl-7 text-base text-center mt-6 md:mt-0">
                 Znanja iz oblasti IT-a i web programiranja stekao je kako kroz
                 formalno obrazovanje, tako i kroz samostalne projekte i
                 kontinuirano usavršavanje. Takodje, veliko iskustvo poseduje iz
