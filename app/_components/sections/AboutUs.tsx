@@ -50,7 +50,7 @@ const AboutUs = () => {
                 </p>
               </div>
               {/* text part */}
-              <div className=" md:w-2/3 pl-7 md:text-start text-center">
+              <div className=" md:w-2/3 md:pl-7 md:text-start text-center">
                 Dugi niz godina bila je deo velikih kompanija, Mercator-S doo i
                 Tehnomanija doo, na rukovodećim pozicijama u veleprodaji i
                 finansijskom kontrolingu, gde je stekla neprocenjivo iskustvo i
@@ -58,7 +58,7 @@ const AboutUs = () => {
                 Fakultetu organizacionih nauka u Beogradu u okviru doktorskih
                 akademskih studija. Ima tri objavljene knjige i pet naučnih
                 radova. Stručna oblast kojom se bavi je emocionalna
-                inteligencija i krizni menadžment.
+                inteligencija i razvoj organizacije.
               </div>
             </div>
             <div className="flex flex-col md:flex md:flex-row  bg-white md:p-8  p-4 max-w-[540px]">
@@ -73,7 +73,7 @@ const AboutUs = () => {
                 <p className="text-base italic ">IT Konsultant</p>
               </div>
               {/* text part */}
-              <div className="md:w-2/3 md:text-start pl-7 text-base text-center mt-6 md:mt-0">
+              <div className="md:w-2/3 md:text-start md:pl-7 w-full text-base text-center mt-6 md:mt-0">
                 Znanja iz oblasti IT-a i web programiranja stekao je kako kroz
                 formalno obrazovanje, tako i kroz samostalne projekte i
                 kontinuirano usavršavanje. Takodje, veliko iskustvo poseduje iz

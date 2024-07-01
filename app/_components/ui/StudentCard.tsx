@@ -18,7 +18,7 @@ const StudentCard = ({ student }: StudentProp) => {
 
   return (
     <div>
-      <div className="flex flex-col items-center  bg-card-bg md:w-[364px] h-[595px] py-6 px-4 mx-4 rounded-[4px] shadow-md">
+      <div className="flex flex-col items-center  bg-card-bg md:w-[364px] h-[540px] py-6 px-4 mx-4 rounded-[4px] shadow-md">
         <div className="md:w-[166px] md:h-[166px] w-[128px] h-[128px] rounded-full overflow-hidden relative">
           <Image src={imageUrl} layout="fill" objectFit="cover" alt="student" />
         </div>

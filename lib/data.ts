@@ -120,7 +120,7 @@ export const topPrograms = [
     typeData: 'individual',
     type: 'Individualni program ',
     title: 'FINANSIJSKI KONTROLING ZA MENADŽERE',
-    desc: 'Napredovao si na veću poziciju, ideš na bitne sastanke ali i dalje ne znaš sve ključne pojmove iz rezultata poslovanja? Šta je Opex, Capex, Goodwill, povrat investicije? Ovaj program je za tebe!',
+    desc: 'Program je dizajniran za obuku menadžera u ključnim veštinama finansijskog kontrolinga. Kroz praktične primere polaznici će steći znanja potrebna za donošenje ključnih poslovnih odluka.',
     stats: {
       duration: '4 nedelje',
       location: ' Online',
@@ -148,7 +148,7 @@ export const topPrograms = [
     type: 'Grupni program',
     typeData: 'group',
     title: 'finansije za preduzetnike',
-    desc: 'Želiš da otvoriš firmu, ali nemaš znanja iz finansija? Vodiš firmu, ali ne znaš koji proizvodi i klijenti su najprofitabilniji? Planiraš novi proizvod, ali ne znaš budući uticaj?',
+    desc: 'Ovaj program pruža ključna znanja o upravljanju finansijama u malim i srednjim preduzećima. Učesnici će naučiti kako efikasno planirati budžet, pratiti troškove i optimizovati profitabilnost.',
     stats: {
       duration: '3 nedelje',
       location: ' Online',
@@ -179,7 +179,7 @@ export const topPrograms = [
     typeData: 'group',
     type: 'Grupne edukacije',
     title: 'Emocijalna inteligencija i liderstvo',
-    desc: 'Istraživanja pokazuju da 67% veština potrebnih za uspeh lidera zavisi od emocionalne inteligencije. Efikasno vođenje tima više se oslanja na emocije nego na logiku. Naučite više i razvijte liderske veštine.',
+    desc: 'Program je namenjen liderima koji žele da razviju emocionalne veštine za efikasnije upravljanje timovima. Polaznici će naučiti kako da regulišu emocije, u cilju unapređenja komunikacije i odlučivanja.',
     stats: {
       duration: 'Jednodnevna edukacija',
       location: 'Online',
@@ -211,7 +211,7 @@ export const topPrograms = [
     typeData: 'group',
     type: 'Grupne edukacije',
     title: 'Uvod u Frontend',
-    desc: 'Ovaj kurs pruža osnovno upoznavanje sa front-end programiranjem, pokrivajući ključne tehnologije kao što su HTML, CSS i JavaScript',
+    desc: 'Ovaj kurs pruža osnovno upoznavanje sa front-end programiranjem, pokrivajući ključne tehnologije kao što su HTML, CSS i JavaScript.',
     stats: {
       duration: '4 nedelje',
 
