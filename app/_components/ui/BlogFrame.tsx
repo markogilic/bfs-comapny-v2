@@ -1,32 +1,41 @@
-import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface BlogFrameProps {
-  imageUrl: StaticImageData;
   title: string;
   date: string;
-  desc: string;
-  id: number;
+  bio: string;
+  slug: string;
 }
 
 const BlogFrame = ({ blogPost }: { blogPost: BlogFrameProps }) => {
-  const { imageUrl, title, date, desc, id } = blogPost;
+  const { title, date, bio, slug } = blogPost;
+
   return (
-    <div className="bg-white mx-4  overflow-hidden rounded-sm">
-      <Image src={imageUrl} alt="blog" />
+    <article className="bg-white  mx-4  overflow-hidden rounded-md shadow-sm w-[364px] p-4">
+      <Image
+        src={`/post_images/${slug}.jpg`}
+        alt="blog"
+        width={364}
+        height={240}
+      />
+
       <div className="p-3 flex flex-col gap-[10px]">
-        <p className="text-sm">{date}</p>
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="text-base ">{desc}</p>
+        <p className="text-sm text-bg-light">
+          <span className="font-semibold text-black">Objavljeno: </span>
+          {date}
+        </p>
+        <h3 className="text-lg font-semibold uppercase py-2">{title}</h3>
+        <p className="text-base ">{bio}</p>
         <Link
-          href="/blog/[id]"
-          as="/blog/1"
+          href={`/blog/${slug}`}
+          replace
           className="underline text-bg-light hover:text-btn-primary  transition-colors"
         >
-          Prođitaj ceo članak
+          Pročitaj ceo članak
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 

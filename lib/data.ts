@@ -178,7 +178,7 @@ export const topPrograms = [
     imageUrl: emolidImage,
     typeData: 'group',
     type: 'Grupne edukacije',
-    title: 'Emocijalna inteligencija i liderstvo',
+    title: 'Emocionalna inteligencija i liderstvo',
     desc: 'Program je namenjen liderima koji žele da razviju emocionalne veštine za efikasnije upravljanje timovima. Polaznici će naučiti kako da regulišu emocije, u cilju unapređenja komunikacije i odlučivanja.',
     stats: {
       duration: 'Jednodnevna edukacija',

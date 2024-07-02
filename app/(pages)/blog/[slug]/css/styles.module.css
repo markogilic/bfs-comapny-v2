@@ -1,0 +1,25 @@
+.blogContent h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.blogContent h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.blogContent h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.blogContent p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
