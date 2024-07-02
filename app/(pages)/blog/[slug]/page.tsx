@@ -48,7 +48,7 @@ export default function SingelPost({ params }: { params: any }) {
   const bestPostMetadata = getBestPostMetadata();
 
   return (
-    <main className="mt-[61px] md:py-[96px] md:px-[150px] mx-auto flex gap-[80px] bg-card-bg">
+    <main className="mt-[61px] md:py-[96px] md:px-[150px] md:pb-0 mx-auto flex flex-col md:flex-row   md:gap-[80px] bg-card-bg px-4 pt-6 pb-12 ">
       <article className={styles.blogContent}>
         <Markdown>{post.content}</Markdown>
       </article>
