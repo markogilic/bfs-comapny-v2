@@ -20,13 +20,13 @@ function getBestPostMetadata() {
   return bestPostMetadata;
 }
 
-export const getStaticParams = async () => {
-  const posts = getPostMetadata('post');
+// export const getStaticParams = async () => {
+//   const posts = getPostMetadata('post');
 
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
-};
+//   return posts.map((post) => ({
+//     slug: post.slug,
+//   }));
+// };
 
 export async function generateMetadata({
   params,
