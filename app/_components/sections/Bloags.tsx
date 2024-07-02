@@ -11,7 +11,7 @@ const Bloags = ({ postsMetadata }: any) => {
   return (
     <section className="bg-card-bg md:py-[96px] py-12 px-4 flex flex-col gap-8 mb-1">
       {width < 768 ? (
-        <MobileBlogs />
+        <MobileBlogs data={bsetPostMetadata} />
       ) : (
         <>
           <SubHeading>NAJNOVIJE NA NAŠEM BLOGU</SubHeading>

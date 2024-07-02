@@ -12,7 +12,7 @@ const BlogFrame = ({ blogPost }: { blogPost: BlogFrameProps }) => {
   const { title, date, bio, slug } = blogPost;
 
   return (
-    <article className="bg-white  mx-4  overflow-hidden rounded-md shadow-sm w-[364px] p-4">
+    <article className="bg-white mx-2 overflow-hidden rounded-md shadow-sm md:w-[354px] h-[538px] p-4 ">
       <Image
         src={`/post_images/${slug}.jpg`}
         alt="blog"

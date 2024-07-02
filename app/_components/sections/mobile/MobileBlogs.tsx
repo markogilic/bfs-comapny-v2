@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { blogPosts } from '@/lib/data';
+
 import BlogFrame from '../../ui/BlogFrame';
 import MobileSubHeading from '../../ui/MobileSubHeading';
 import PrimaryBtn from '../../ui/primary-btn';
@@ -9,7 +9,7 @@ import { FaArrowCircleLeft } from 'react-icons/fa';
 import { FaArrowCircleRight } from 'react-icons/fa';
 import Slider from 'react-slick';
 
-const MobileBlogs = () => {
+const MobileBlogs = ({ data }: any) => {
   let sliderRef = useRef<Slider | null>(null);
   const settings = {
     dots: true,
@@ -24,8 +24,8 @@ const MobileBlogs = () => {
     <>
       <MobileSubHeading>NAJNOVIJE NA NAŠEM BLOGU</MobileSubHeading>
       <Slider ref={sliderRef} {...settings}>
-        {blogPosts.map((blogPost, index) => (
-          <BlogFrame key={blogPost.id} blogPost={blogPost} />
+        {data.map((post: any, index: number) => (
+          <BlogFrame blogPost={post} key={index} />
         ))}
       </Slider>
       <div className="flex z-55 mt-10  justify-center items-center gap-5">
