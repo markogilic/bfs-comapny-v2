@@ -9,8 +9,10 @@ import Gallery from './_components/sections/Gallery';
 import Bloags from './_components/sections/Bloags';
 import NavigateToProgram from './_components/sections/NavigateToProgram';
 import InstagramPost from './_components/sections/InstagramPost';
+import getPostMetadata from '@/lib/getPostMetaData';
 
 export default function Home() {
+  const postsMetadata = getPostMetadata('post');
   return (
     <main className=" min-h-screen ">
       <HeroSection />
@@ -21,8 +23,7 @@ export default function Home() {
       <ClientSection />
       <AboutUs />
       <Gallery />
-      <Bloags />
-      <InstagramPost />
+      <Bloags postsMetadata={postsMetadata} />
       <NavigateToProgram />
     </main>
   );

@@ -1,6 +1,5 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import { date } from 'yup';
 
 export default function getPostMetadata(basePath: string) {
   const folder = basePath + '/';
