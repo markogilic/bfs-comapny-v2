@@ -20,7 +20,7 @@ function getBestPostMetadata() {
   return bestPostMetadata;
 }
 
-export const geStaticParams = async () => {
+export const getStaticParams = async () => {
   const posts = getPostMetadata('post');
 
   return posts.map((post) => ({
@@ -42,7 +42,7 @@ export async function generateMetadata({
   };
 }
 
-const SingelPost = ({ params }: { params: any }) => {
+export default function SingelPost({ params }: { params: any }) {
   const { slug } = params;
   const post = getPostContent(slug);
   const bestPostMetadata = getBestPostMetadata();
@@ -59,6 +59,4 @@ const SingelPost = ({ params }: { params: any }) => {
       </aside>
     </main>
   );
-};
-
-export default SingelPost;
+}
