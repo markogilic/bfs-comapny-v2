@@ -2,6 +2,7 @@ import Image, { StaticImageData } from 'next/image';
 import PrimaryBtn from './primary-btn';
 
 interface BestProgramProps {
+  id: number;
   imageUrl: StaticImageData;
   title: string;
   type: string;
@@ -17,7 +18,7 @@ interface ProgramFrameProps {
 }
 
 const MobileBestProgramFrame = ({ bestProgram }: ProgramFrameProps) => {
-  const { imageUrl, title, type, desc, stats } = bestProgram;
+  const { imageUrl, title, type, desc, stats, id } = bestProgram;
   return (
     <article className="rounded-[4px] h-[582px] overflow-hidden bg-card-bg  flex flex-col justify-between mx-4">
       <div>
@@ -38,7 +39,7 @@ const MobileBestProgramFrame = ({ bestProgram }: ProgramFrameProps) => {
             Cena: <span className="font-bold">{stats.price}</span>
           </li>
         </ul>
-        <PrimaryBtn path="/programs/fkzm">DETALJI PROGRAMA</PrimaryBtn>
+        <PrimaryBtn path={`/programs/${id}`}>DETALJI PROGRAMA</PrimaryBtn>
       </div>
     </article>
   );

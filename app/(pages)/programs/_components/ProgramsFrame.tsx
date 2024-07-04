@@ -52,17 +52,17 @@ const ProgramsFrame = () => {
       <div className="w-full">
         <ProgramDisplay type={activeTab} />
       </div>
-      <div className="md:flex-row justify-center md:gap-6 flex flex-col gap-2 mb-12 ">
+      <div className="md:flex-row justify-center md:gap-6 flex flex-col gap-2 mb-12 text-sm md:text-base">
         <p className="flex items-center justify-center gap-1">
-          <Image src={chekIcon} alt="check icon" />
+          <Image src={chekIcon} alt="check icon" width={16} />
           Duboko Razumevanje Finansijskog Kontrolinga
         </p>
         <p className="flex items-center justify-center gap-1">
-          <Image src={chekIcon} alt="check icon" />
+          <Image src={chekIcon} alt="check icon" width={16} />
           Rast i Optimizacija Poslovanja
         </p>
         <p className="flex items-center justify-center gap-1">
-          <Image src={chekIcon} alt="check icon" />
+          <Image src={chekIcon} alt="check icon" width={16} />
           Razvoj Veština i Liderstva
         </p>
       </div>
