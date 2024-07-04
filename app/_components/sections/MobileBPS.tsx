@@ -46,17 +46,17 @@ const MobileBPS = () => {
           <FaArrowCircleRight size={24} color="#495696" />
         </button>
       </div>
-      <div className="mt-8 flex flex-col gap-2">
+      <div className="mt-8 flex flex-col gap-2 ">
         <p className="flex items-center justify-center gap-1 text-sm">
-          <Image src={chekIcon} alt="check icon" width={18} />
+          <Image src={chekIcon} alt="check icon" width={16} />
           Duboko Razumevanje Finansijskog Kontrolinga
         </p>
         <p className="flex items-center justify-center gap-1 text-sm">
-          <Image src={chekIcon} alt="check icon" width={18} />
+          <Image src={chekIcon} alt="check icon" width={16} />
           Rast i Optimizacija Poslovanja
         </p>
         <p className="flex items-center justify-center gap-1 text-sm">
-          <Image src={chekIcon} alt="check icon" width={18} />
+          <Image src={chekIcon} alt="check icon" width={16} />
           Razvoj Veština i Liderstva
         </p>
       </div>
