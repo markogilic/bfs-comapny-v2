@@ -48,7 +48,7 @@ const BestProgramsSection = () => {
             </p>
           </div>
           <div className="mx-auto">
-            <PrimaryBtn path="/programs">POGLEDAJ SVE PROGRAME</PrimaryBtn>
+            <PrimaryBtn path="/programs">POGLEDAJ PROGRAME</PrimaryBtn>
           </div>
         </>
       )}

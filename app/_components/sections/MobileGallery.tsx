@@ -54,7 +54,7 @@ const MobileGallery = ({ galleryImage }: { galleryImage: imageProps[] }) => {
         </button>
       </div>
       <div className="mt-8">
-        <PrimaryBtn path="/galerija">poseti galeriju</PrimaryBtn>
+        <PrimaryBtn path="/gallery">poseti galeriju</PrimaryBtn>
       </div>
     </>
   );

@@ -86,7 +86,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="flex justify-center items- mt-12">
-          <PrimaryBtn path="/programs">POGLEDAJ SVE PROGRAME</PrimaryBtn>
+          <PrimaryBtn path="/programs">POGLEDAJ PROGRAME</PrimaryBtn>
         </div>
       </div>
     </section>

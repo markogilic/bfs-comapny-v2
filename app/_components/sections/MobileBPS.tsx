@@ -61,7 +61,7 @@ const MobileBPS = () => {
         </p>
       </div>
       <div className="mx-auto mt-8">
-        <PrimaryBtn path="/programs">POGLEDAJ SVE PROGRAME</PrimaryBtn>
+        <PrimaryBtn path="/programs">POGLEDAJ PROGRAME</PrimaryBtn>
       </div>
     </div>
   );
