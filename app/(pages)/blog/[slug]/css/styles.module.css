@@ -1,25 +1,101 @@
+.blogContent {
+  padding: 0 96px;
+}
+
 .blogContent h1 {
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 36px;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .blogContent h2 {
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .blogContent h3 {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: center;
 }
 .blogContent p {
-  font-size: 16px;
+  font-size: 18px;
+  color: #666;
   line-height: 1.5;
   margin-bottom: 24px;
+}
+
+.fade_rule {
+  height: 1px;
+  background-color: #e6e6e6;
+  width: 66rem;
+  margin: 0 auto;
+  background-image: linear-gradient(left, white 2%, #e6e6e6 50%, white 98%);
+}
+
+.blogContent ul {
+  list-style-type: disc;
+  margin-left: 16px;
+}
+
+.blogContent ol {
+  list-style-type: decimal;
+}
+.blogContent li {
+  font-size: 18px;
+  color: #575757;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  margin-left: 24px;
+}
+.blogContent blockquote {
+  font-size: 18px;
+  color: #575757;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  border-left: 4px solid #f0f0f0;
+  padding-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .blogContent {
+    padding: 0 8px;
+  }
+  .blogContent h1 {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
+  .blogContent h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .blogContent h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .blogContent p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .blogContent li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
+  .fade_rule {
+    width: 95%;
+  }
+  .blogContent blockquote {
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-left: 8px;
+  }
 }

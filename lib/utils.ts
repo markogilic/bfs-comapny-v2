@@ -1,6 +1,8 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { StaticImageData } from 'next/image';
+import { format } from 'date-fns';
+import { srLatn } from 'date-fns/locale';
 
 interface GalleryImage {
   id: number;
@@ -61,4 +63,11 @@ export function getProgramsByType(type: string, array: ProgramProps[]) {
 export function getProgramById(array: ProgramProps[], id: number) {
   const program = array.find((program) => program.id === id);
   return program;
+}
+
+export function formatDate(date: string) {
+  const formattedDate = format(new Date(date), 'dd MMMM , yyyy', {
+    locale: srLatn,
+  });
+  return formattedDate;
 }

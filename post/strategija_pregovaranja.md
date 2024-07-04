@@ -8,7 +8,7 @@ description: '„Uspešni pregovori sastoje se u tome da otkrijete šta druga st
 
 > „Uspešni pregovori sastoje se u tome da otkrijete šta druga strana želi, kao i da joj to obezbedite, pod uslovom da i Vi dobijete ono što želite.“
 >
-> > Herb Choen, američki stručnjak za pregovore
+> _Herb Choen, američki stručnjak za pregovore_
 
 Ovo lepo zvuči, ali kako to postići? U ovom blogu bavimo se vrstama strategije koje su u upotrebi u
 današnjem modernom okruženju. Ukupno je pet definisanih strategija, a njihova upotreba zavisi od
