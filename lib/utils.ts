@@ -66,7 +66,7 @@ export function getProgramById(array: ProgramProps[], id: number) {
 }
 
 export function formatDate(date: string) {
-  const formattedDate = format(new Date(date), 'dd MMMM , yyyy', {
+  const formattedDate = format(new Date(date), 'dd. MMMM yyyy.', {
     locale: srLatn,
   });
   return formattedDate;

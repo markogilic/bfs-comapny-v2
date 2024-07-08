@@ -429,45 +429,4 @@ export const galleryImages = [
     imageUrl: galleryImage18,
     title: 'Ucesnici edukacije emocionalne inteligencije u pregovaranju',
   },
-  {
-    id: 19,
-    imageUrl: galleryImage9,
-    title: 'BFS Bookmarker ',
-  },
-  {
-    id: 20,
-    imageUrl: galleryImage7,
-    title: 'Edukacija zaposlenih utice na rezultate poslovanja ',
-  },
 ];
-
-export const blogPosts = [
-  {
-    id: 1,
-    imageUrl: blogTestImage,
-    title: 'Kako da postanete lider u svom poslu',
-    date: '25.12.2024',
-    desc: ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure quos, excepturi natus eum saepe ...',
-  },
-  {
-    id: 2,
-    imageUrl: blogTestImage,
-    title: 'Kako da postanete lider u svom poslu',
-    date: '25.12.2024',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure quos, excepturi natus eum saepe ...',
-  },
-  {
-    id: 3,
-    imageUrl: blogTestImage,
-    title: 'Kako da postanete lider u svom poslu',
-    date: '25.12.2024',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure quos, excepturi natus eum saepe ...',
-  },
-  {
-    id: 4,
-    imageUrl: blogTestImage,
-    title: 'Kako da postanete lider u svom poslu',
-    date: '25.12.2024',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure quos, excepturi natus eum saepe ...',
-  },
-] as const;

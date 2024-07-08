@@ -30,7 +30,9 @@ const SingleProgramFrame = ({ program }: { program: ProgramProps }) => {
 
   return (
     <div className="md:px-[150px] md:py-[96px] pt-6 px-4 pb-12">
-      <SubHeading>{title}</SubHeading>
+      <h1 className="md:text-[36px] text-center mx-auto font-bold uppercase text-[28px]">
+        {title}
+      </h1>
       <div className="md:flex md:mt-12 mt-6">
         <div className="md:w-1/2">
           <p className="font-semibold">

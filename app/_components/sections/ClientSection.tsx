@@ -4,6 +4,9 @@ import EmblaCarousel from '../embla-carousel/EmblaCarousel';
 import { EmblaOptionsType } from 'embla-carousel';
 import { UseScreenWidth } from '@/app/hooks/screen-width';
 import MobileClientSection from './MobileClientSection';
+import CarouselTempate from '../template/CarouselTempate';
+import { students } from '@/lib/data';
+import StudentCard from '../ui/StudentCard';
 
 const OPTIONS: EmblaOptionsType = {};
 
@@ -16,8 +19,14 @@ const ClientSection = () => {
       ) : (
         <>
           <SubHeading>ZADOVOLJNI POLAZNICI</SubHeading>
-
-          <EmblaCarousel options={OPTIONS} />
+          <div className="w-[1130px] mx-auto">
+            <CarouselTempate toShow={3} customeDots={true}>
+              {students.map((student, idx) => (
+                <StudentCard key={idx} student={student} />
+              ))}
+            </CarouselTempate>
+          </div>
+          {/* <EmblaCarousel options={OPTIONS} /> */}
         </>
       )}
     </section>

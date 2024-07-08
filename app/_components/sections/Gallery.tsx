@@ -4,11 +4,13 @@ import PrimaryBtn from '../ui/primary-btn';
 import MobileGallery from './MobileGallery';
 import Image from 'next/image';
 import { galleryImages } from '@/lib/data';
-import { shuffleArray } from '@/lib/utils';
+
 import { UseScreenWidth } from '@/app/hooks/screen-width';
+import { shuffleArray } from '@/lib/shuffleArray';
 
 const Gallery = () => {
   // shuffle the images
+  // const suffledArray = shuffleArray(galleryImages);
   const suffledArray = shuffleArray(galleryImages);
   const slicedGalleryImages = suffledArray.slice(0, 8);
   const width = UseScreenWidth();

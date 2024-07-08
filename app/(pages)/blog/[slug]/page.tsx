@@ -39,10 +39,14 @@ export async function generateMetadata({
   params: any;
   searchParams: any;
 }) {
-  const id = params?.slug ? '-' + params?.slug : '';
-
+  // const id = params?.slug ? '-' + params?.slug : '';
+  const postMetadata = getPostMetaDataBySlug(params.slug);
+  const { title, bio } = postMetadata || { title: '', bio: '' };
+  const imageUrl = `/post_images/${postMetadata?.slug}.jpg`;
   return {
-    title: `BFS Company ${id.replaceAll('_', ' ')}`,
+    title: title,
+    description: bio,
+    imageUrl: imageUrl,
   };
 }
 

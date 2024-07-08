@@ -7,7 +7,11 @@ import MobileBlogs from './mobile/MobileBlogs';
 
 const Bloags = ({ postsMetadata }: any) => {
   const width = UseScreenWidth();
-  const bsetPostMetadata = postsMetadata.slice(0, 4);
+  const orderPostbYDate = postsMetadata.sort((a: any, b: any) => {
+    return Number(new Date(b.date)) - Number(new Date(a.date));
+  });
+
+  const bsetPostMetadata = orderPostbYDate.slice(0, 4);
   return (
     <section className="bg-card-bg md:py-[96px] py-12 px-4 flex flex-col gap-8 mb-1">
       {width < 768 ? (
