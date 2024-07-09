@@ -50,6 +50,9 @@ export async function generateMetadata({
     title: title,
     description: bio,
     imageUrl: imageUrl,
+    openGraph: {
+      images: imageUrl,
+    },
   };
 }
 
