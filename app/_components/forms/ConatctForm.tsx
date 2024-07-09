@@ -58,10 +58,11 @@ const ConatctForm = () => {
       () => {
         console.log('Email sent successfully');
         setIsSubmitting(false);
-        toast.success('Uspesno ste poslali poruku!');
+        reset();
+        toast.success('Uspešno ste poslali poruku!');
       },
       (error) => {
-        toast.error('Doslo je do greske prilikom slanja poruke');
+        toast.error('Došlo je do greške prilikom slanja poruke');
       }
     );
   };
@@ -101,7 +102,7 @@ const ConatctForm = () => {
             'w-full mt-1 rounded-[4px] px-[10px] py-2  focus:outline-none treansition-colors',
             errors.email ? 'bg-red-200' : 'bg-white'
           )}
-          placeholder="e-mail"
+          placeholder="Email"
         />
       </div>
       <div>

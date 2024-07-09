@@ -76,8 +76,8 @@ const AboutUs = () => {
               <div className="md:w-2/3 md:text-start md:pl-7 w-full text-base text-center mt-6 md:mt-0">
                 Znanja iz oblasti IT-a i web programiranja stekao je kako kroz
                 formalno obrazovanje, tako i kroz samostalne projekte i
-                kontinuirano usavršavanje. Takodje, veliko iskustvo poseduje iz
-                oblasti logistike koje je stekao kroz rad u medjunarodnim
+                kontinuirano usavršavanje. Takođe, veliko iskustvo poseduje iz
+                oblasti logistike koje je stekao kroz rad u međunarodnim
                 kompanijama Havi Logistic i Stellantis. Poznavanje biznis
                 procesa velikih organizacija u velikoj meri doprinelo je razvoju
                 IT karijere kao konsultanta i web programera.

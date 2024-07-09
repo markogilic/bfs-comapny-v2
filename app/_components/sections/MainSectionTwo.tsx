@@ -29,7 +29,7 @@ const MainSectionTwo = () => {
               title="Duboko Razumevanje Finansijskog Kontrolinga"
             >
               Pružamo vam ključno znanje i analitičke veštine kako biste
-              efikasno upravljali finansijskim aspektima vašeg poslovanja
+              efikasno upravljali finansijskim aspektima vašeg poslovanja.
             </GoalCard>
             <GoalCard
               imagePath={imageTwo}
@@ -49,9 +49,9 @@ const MainSectionTwo = () => {
               pružajući vam rešenja koja odgovaraju vašem poslovnom modelu.
             </GoalCard>
             <GoalCard imagePath={imageFive} title="Dugoročna podrška">
-              Naša podrška ne završava nakon završetka programa; nastavljamo da
-              vas podržavamo dugoročno kako biste ostvarili kontinuirani rast i
-              uspeh.
+              Naša podrška se ne završava nakon završetka programa; nastavljamo
+              da vas podržavamo dugoročno kako biste ostvarili kontinuirani rast
+              i uspeh.
             </GoalCard>
           </div>
         </>

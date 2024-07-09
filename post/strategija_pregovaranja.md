@@ -1,6 +1,6 @@
 ---
 title: 'Strategije pregovaranja u modernom poslovnom okruženju'
-date: '2024-05-06'
+date: '2024-05-10'
 description: '„Uspešni pregovori sastoje se u tome da otkrijete šta druga strana želi, kao i da joj to obezbedite, pod uslovom da i Vi dobijete ono što želite.“'
 ---
 

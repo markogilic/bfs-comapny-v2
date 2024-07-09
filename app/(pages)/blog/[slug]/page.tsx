@@ -18,9 +18,12 @@ function getPostContent(slug: string) {
   return matterResult;
 }
 
-function getBestPostMetadata() {
+function getBestPostMetadataBYDate() {
   const postsMetadata = getPostMetadata('post');
-  const bestPostMetadata = postsMetadata.slice(0, 3);
+  const orderPostbYDate = postsMetadata.sort((a: any, b: any) => {
+    return Number(new Date(b.date)) - Number(new Date(a.date));
+  });
+  const bestPostMetadata = orderPostbYDate.slice(0, 3);
   return bestPostMetadata;
 }
 
@@ -53,7 +56,7 @@ export async function generateMetadata({
 export default function SingelPost({ params }: { params: any }) {
   const { slug } = params;
   const post = getPostContent(slug);
-  const bestPostMetadata = getBestPostMetadata();
+  const bestPostMetadata = getBestPostMetadataBYDate();
 
   const getSinglePostMetadata = getPostMetaDataBySlug(slug);
   const { title, date, bio } = getSinglePostMetadata || {};

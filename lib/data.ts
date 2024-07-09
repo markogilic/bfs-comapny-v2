@@ -4,7 +4,7 @@ import Contrust from '@/public/logos/contrust.png';
 import Dakom from '@/public/logos/dakom-logo.jpg';
 import Jezdimirovic from '@/public/logos/jezdimirovic.png';
 import Progard from '@/public/logos/progard.png';
-import SamAkademija from '@/public/logos/sam_akademija.png';
+import SamAkademija from '@/public/logos/sam_logo.jpg';
 
 // image of students
 
@@ -70,7 +70,7 @@ export const students = [
     name: 'Mirjana Dajković',
     ratings: 5,
     review:
-      'Mirjana je izuzetno obrazovana, sa odličnim pristupom nastavi i uvek je na raspolaganju za savet. Njena posvećenost i iskrena briga o mom iskustvu učenja čine svaki čas vrednim. Sposobnost povezivanja teoretskih koncepata sa scenarijima iz stvarnog sveta poboljšala je moje razumevanje finansija.Mentorstvo se proteže van granica redovnih časova – ona podstiče diskusije i svaki čas je prilagođen i personalizovan.Bez sumnje, iskustvo mentorstva sa 5 zvezdica.',
+      'Mirjana je izuzetno obrazovana, sa odličnim pristupom nastavi i uvek je na raspolaganju za savet. Njena posvećenost i iskrena briga o mom iskustvu učenja čine svaki čas vrednim. Sposobnost povezivanja teoretskih koncepata sa scenarijima iz stvarnog sveta poboljšala je moje razumevanje finansija.    Mentorstvo se proteže van granica redovnih časova – ona podstiče diskusije i svaki čas je prilagođen i personalizovan. Bez sumnje, iskustvo mentorstva sa 5 zvezdica.',
   },
   {
     imageUrl: Student2,
@@ -132,7 +132,7 @@ export const topPrograms = [
       main: 'Ukoliko želiš dodatna znanja iz finansijskog kontrolinga i rezultata poslovanja uz mentora koji će pratiti tvoj razvoj, ovo je program za tebe. Bez obzira da li gradiš karijeru u oblasti finansija ili ne, ova znanja će upotpuniti tvoj portfolio menadžera, a individualni rad sa mentorom pružiće ti nove vidike i prilike u budućnosti',
       tags: [],
       titleList:
-        'Program je prilagodjen tebi i tvom nivou poznavanja finansija, ali neke od ključnih tema koje ćeš naučiti jesu:',
+        'Program je prilagođen tebi i tvom nivou poznavanja finansija, ali neke od ključnih tema koje ćeš naučiti jesu:',
       list: [
         'Uvod u finansijski kontroling (funkcija u organizaciji, odgovornosti, opšti pojmovi i skraćenice: BS, BU, BI, BUD, B2B,CF, EX, OPEX, GM...)',
         'Mesečni paket izvestavanja profitabilnosti kompanije (P&L, rezultati poslovanja, prezentacija poslovanja, prikaz rezultata u odnosu na budžet, na forcast, na prethodnu godinu...)',
@@ -163,7 +163,7 @@ export const topPrograms = [
       list: [
         'Uvod u finansije – prihod, fakture, pdv, marža, zarada;',
         'Šire sagledavanje biznisa – profitabilnost proizvoda, klijenata, upravljanje troškovima;',
-        'Analiza biznisa kroz rezultate i brojke – zarada na kraju meseca, prostor za unapredjenje;',
+        'Analiza biznisa kroz rezultate i brojke – zarada na kraju meseca, prostor za unapređenje;',
         'Budžet – definisanje planova za rast biznisa;',
         'Postavka parametara za praćenje poslovanja;',
         'Tehnike za praćenje i upravljanje tokovima gotovine;',
@@ -188,7 +188,7 @@ export const topPrograms = [
       price: '120e',
     },
     fullDesc: {
-      main: 'Istraživanja pokazuju da 67% svih veština koje su lideru potrebne za poslovni rezultat i uspeh, zasnivaju se na emocionalnoj inteligenciji. Zašto je to tako? Uspešno vodjenje tima je više emotivan, nego kongitivan proces, jer lideri imaju bolje rezultate u motivaciji članova tima putem emocije, u odnosu na korišćenje logike. Ukoliko želiš da naučiš više o emocionalnoj inteligenciji i efikasnom vodjenju timova, da uložiš u razvoj svojih liderskih veština, ovo je prava edukacija za tebe.',
+      main: 'Istraživanja pokazuju da 67% svih veština koje su lideru potrebne za poslovni rezultat i uspeh, zasnivaju se na emocionalnoj inteligenciji. Zašto je to tako? Uspešno vođenje tima je više emotivan, nego kongitivan proces, jer lideri imaju bolje rezultate u motivaciji članova tima putem emocije, u odnosu na korišćenje logike. Ukoliko želiš da naučiš više o emocionalnoj inteligenciji i efikasnom vođenju timova, da uložiš u razvoj svojih liderskih veština, ovo je prava edukacija za tebe.',
       tags: [],
       titleList: 'Na edukaciji ćeš naučiti:',
       list: [

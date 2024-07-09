@@ -1,6 +1,6 @@
 'use client';
 import SubHeading from '@/app/_components/ui/subHeading';
-
+import Link from 'next/link';
 import LogoImage from '@/public/des/logo_bfs_co 3.svg';
 import Image from 'next/image';
 import { MdEmail } from 'react-icons/md';
@@ -12,7 +12,7 @@ import ConatctForm from './forms/ConatctForm';
 
 const Footer = () => {
   return (
-    <section className=" bg-bg-darck md:px-[150px] md:py-[96px] py-12 px-4 flex flex-col gap-12">
+    <section className=" bg-bg-darck md:px-[150px] md:pt-[96px] py-12 px-4 flex flex-col gap-12">
       <SubHeading style="text-white">KOPNTAKTIRAJTE NAS</SubHeading>
       <div className="mx-auto flex justify-center items-center  md:flex-row flex-col-reverse gap-8 ">
         <div className="md:w-[540px] w-[120px] ">
@@ -49,6 +49,12 @@ const Footer = () => {
             <FaInstagram className="text-white text-2xl" />
           </a>
         </div>
+      </div>
+      <div className="text-white mx-auto">
+        © 2023 BFS Company. All rights reserved.{' '}
+        <Link href="/tearms" className="underline">
+           Tearms of Services | Privacy Policy
+        </Link>
       </div>
     </section>
   );

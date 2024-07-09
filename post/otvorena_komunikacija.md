@@ -1,5 +1,5 @@
 ---
-title: 'Šta zposleni žele (u krizi)? – “Otvorenu komunikaciju.” '
+title: 'Šta zaposleni žele (u krizi)? – “Otvorenu komunikaciju.” '
 date: '2024-06-14'
 description: 'Interne komunikacije u organizaciji imaju veliki značaj. Prvenstveno je razlog to, što je osnov dobrog menadžmenta jasna i transparentna komunikacija sa svim zaposlenima.'
 ---

@@ -15,7 +15,7 @@ const GalleryTemplateGrid = ({ gallery }: { gallery: GalleryProps[] }) => {
           <Image
             src={image.imageUrl}
             alt={image.title}
-            className="object-cover w-full h-full "
+            className=" object-cover w-full h-full "
           />
         </div>
       ))}

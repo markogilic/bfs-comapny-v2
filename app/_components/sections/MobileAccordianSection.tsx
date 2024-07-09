@@ -32,7 +32,7 @@ const MobileAccordianSection = () => {
           </AccordionTrigger>
           <AccordionContent>
             Pružamo vam ključno znanje i analitičke veštine kako biste efikasno
-            upravljali finansijskim aspektima vašeg poslovanja
+            upravljali finansijskim aspektima vašeg poslovanja.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
@@ -99,7 +99,7 @@ const MobileAccordianSection = () => {
             </div>
           </AccordionTrigger>
           <AccordionContent>
-            Naša podrška ne završava nakon završetka programa; nastavljamo da
+            Naša podrška se ne završava nakon završetka programa; nastavljamo da
             vas podržavamo dugoročno kako biste ostvarili kontinuirani rast i
             uspeh.
           </AccordionContent>

@@ -1,6 +1,6 @@
 ---
 title: 'Emocionalna inteligencija i krizne situacije'
-date: '2024-02-03'
+date: '2024-02-02'
 description: 'Kada govorimo o emocionalnoj inteligenciji u biznisu, moramo spomenuti članak autora Golemana iz 1998 godine, koji je objavljen nakon sprovedenih istraživanja i koji daje zaključak da se 67% ...  '
 ---
 

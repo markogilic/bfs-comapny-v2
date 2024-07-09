@@ -72,7 +72,7 @@ const ProgramForm = ({ programName }: { programName: string }) => {
         console.log('Email sent successfully');
         setIsSubmitting(false);
         reset();
-        toast.success('Uspesno ste poslali poruku!');
+        toast.success('Uspešno ste poslali prijavu');
       },
       (error) => {
         toast.error('Doslo je do greske prilikom slanja poruke');
@@ -122,7 +122,7 @@ const ProgramForm = ({ programName }: { programName: string }) => {
             'w-full mt-1 rounded-[4px] px-[10px] py-2  focus:outline-none border-[1px] border-black bg-card-bg',
             errors.email ? 'bg-red-200' : 'bg-white'
           )}
-          placeholder="e-mail"
+          placeholder="Email"
         />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
       </div>

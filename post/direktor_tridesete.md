@@ -1,6 +1,6 @@
 ---
 title: 'Direktor pre tridesete: trend ili eksperiment 21.veka?'
-date: '2024-01-03'
+date: '2024-01-10'
 description: 'Šta biste Vi rekli na ovo? Verujem da imate u svom okruženju bar jednu osobu koja je uspela da se pre 30te godine popne na neku od visokih menadžerskih pozicija.'
 ---
 

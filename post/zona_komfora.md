@@ -1,6 +1,6 @@
 ---
 title: 'PROSEK JE LEPA ZONA KOMFORA - KAKO IZAZVATI SEBE NA IZVRSNOST?'
-date: '2024-03-03'
+date: '2024-03-07'
 description: 'Nakon 9 godina u korporativnom svetu donela sam odluku da pokrenem sopstveni biznis. Moram priznati da sam ja oduvek o tome razmišljala ... '
 ---
 
