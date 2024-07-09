@@ -62,7 +62,7 @@ const GalleryFrame = () => {
                 galleryOneActive ? 'border-b-[3px]' : 'border-b-[1px]'
               )}
             >
-              Kategorija 1
+              Strana 1
             </span>
             <span
               onClick={handleGalleryTwo}
@@ -71,7 +71,7 @@ const GalleryFrame = () => {
                 galleryTwoActive ? 'border-b-[3px]' : 'border-b-[1px]'
               )}
             >
-              Kategorija 2
+              Strana 2
             </span>
           </div>
           <div>

@@ -30,7 +30,6 @@ const BlogFrame = ({ blogPost }: { blogPost: BlogFrameProps }) => {
         <p className="text-base ">{bio}</p>
         <Link
           href={`/blog/${slug}`}
-          replace
           className="underline text-bg-light hover:text-btn-primary  transition-colors"
         >
           Pročitaj ceo članak

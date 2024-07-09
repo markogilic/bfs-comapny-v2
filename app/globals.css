@@ -82,7 +82,8 @@
 .galleryContainer {
   margin: 0 auto;
   width: 1140px;
-  height: 1140px;
+  /* height: 1140px; */
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;

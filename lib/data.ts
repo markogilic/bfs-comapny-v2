@@ -43,6 +43,8 @@ import galleryImage15 from '@/public/gallery_image/IMG-20210606-WA0009.jpg';
 import galleryImage16 from '@/public/gallery_image/IMG-20210606-WA0010.jpg';
 import galleryImage17 from '@/public/gallery_image/IMG-20210606-WA0012.jpg';
 import galleryImage18 from '@/public/gallery_image/IMG-20231016-WA0000.jpg';
+import galleryImage19 from '@/public/gallery_image/_ZLO7135.jpeg';
+import galleryImage20 from '@/public/gallery_image/_ZLO7123.jpeg';
 
 //blog images
 import blogTestImage from '@/public/des/blog-placceholder.jpg';
@@ -428,5 +430,109 @@ export const galleryImages = [
     id: 18,
     imageUrl: galleryImage18,
     title: 'Ucesnici edukacije emocionalne inteligencije u pregovaranju',
+  },
+  {
+    id: 19,
+    imageUrl: galleryImage19,
+    title: 'Ucesnici edukacije emocionalne inteligencije u pregovaranju',
+  },
+  {
+    id: 20,
+    imageUrl: galleryImage20,
+    title: 'Sam Predavanje',
+  },
+];
+
+export const testImage = [
+  {
+    src: '/gallery_image/DSC_2390.jpg',
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: '/gallery_image/DSC_2400.jpg',
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: '/gallery_image/DSC_2412.jpg',
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: '/gallery_image/DSC_2457.jpg',
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: '/gallery_image/DSC_2458.jpg',
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: '/gallery_image/DSC_2461.jpg',
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: '/gallery_image/DSC_4196.jpg',
+    width: 1600,
+    height: 1065,
+  },
+  {
+    src: '/gallery_image/DSC_4246.jpg',
+    width: 1600,
+    height: 1065,
+  },
+  {
+    src: '/gallery_image/IMG_20230929_182545.jpg',
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: '/gallery_image/IMG_20230930_161411.jpg',
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: '/gallery_image/IMG_20230930_161433.jpg',
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: '/gallery_image/IMG_20231104_140432.jpg',
+    width: 1200,
+    height: 1600,
+  },
+  {
+    src: '/gallery_image/IMG_20231106_144740.jpg',
+    width: 1600,
+    height: 1200,
+  },
+
+  {
+    src: '/gallery_image/IMG_20240426_144218_346.jpg',
+    width: 1600,
+    height: 1600,
+  },
+  {
+    src: '/gallery_image/IMG-20210606-WA0009.jpg',
+    width: 1600,
+    height: 901,
+  },
+  {
+    src: '/gallery_image/IMG-20210606-WA0010.jpg',
+    width: 1600,
+    height: 901,
+  },
+  {
+    src: '/gallery_image/IMG-20210606-WA0012.jpg',
+    width: 774,
+    height: 1600,
+  },
+  {
+    src: '/gallery_image/IMG-20231016-WA0000.jpg',
+    width: 1200,
+    height: 1600,
   },
 ];

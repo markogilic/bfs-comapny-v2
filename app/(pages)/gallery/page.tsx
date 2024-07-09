@@ -1,6 +1,7 @@
 import GalleryFrame from './_components/GalleryFrame';
 import NavigateToProgram from '@/app/_components/sections/NavigateToProgram';
 import { Metadata } from 'next';
+import TestGallery from './_components/TestGallery';
 
 export const generateMetadata = (): Metadata => {
   return {
@@ -14,6 +15,7 @@ const Gallery = () => {
   return (
     <main className="mt-[30px]">
       <GalleryFrame />
+      {/* <TestGallery /> */}
       <NavigateToProgram />
     </main>
   );
