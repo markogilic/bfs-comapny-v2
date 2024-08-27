@@ -7,13 +7,26 @@ import { getProgramById } from '@/lib/utils';
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const id = Number(params.id);
   const program = getProgramById(topPrograms, id);
-
-  const { title, desc, imageUrl } = program || { title: '', description: '' };
-
+  const baseUrl = process.env.BASE_PROGRAM_IMAGE_URL;
+  const openGraphImageUrl = `${baseUrl}${id}.jpg`;
+  const { title, desc } = program || { title: '', description: '' };
+  const fullTitle = `${title} | BFS Comapny`;
   return {
-    title: title,
+    title: fullTitle,
     description: desc,
-    imageUrl: imageUrl,
+    imageUrl: openGraphImageUrl,
+    openGraph: {
+      title: fullTitle,
+      description: desc,
+      images: [
+        {
+          url: openGraphImageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
   };
 }
 

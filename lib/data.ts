@@ -5,6 +5,10 @@ import Dakom from '@/public/logos/dakom-logo.jpg';
 import Jezdimirovic from '@/public/logos/jezdimirovic.png';
 import Progard from '@/public/logos/progard.png';
 import SamAkademija from '@/public/logos/sam_logo.jpg';
+import DigitalnaBasta from '@/public/logos/digitalna-basta.png';
+import Sena from '@/public/logos/sena.jpg';
+import RibiliLogo from '@/public/logos/ribili_logo.png';
+import KVLlogo from '@/public/logos/kvl_logo_crop.jpg';
 
 // image of students
 
@@ -62,6 +66,10 @@ export const logosUrl = [
   Jezdimirovic,
   Progard,
   SamAkademija,
+  DigitalnaBasta,
+  Sena,
+  RibiliLogo,
+  KVLlogo,
 ] as const;
 
 export const students = [

@@ -46,12 +46,25 @@ export async function generateMetadata({
   const postMetadata = getPostMetaDataBySlug(params.slug);
   const { title, bio } = postMetadata || { title: '', bio: '' };
   const imageUrl = `/post_images/${postMetadata?.slug}.jpg`;
+  const baseUrl = process.env.BASE_POST_IMAGE_URL;
+  const openGraphImageUrl = `${baseUrl}${postMetadata?.slug}.jpg`;
+  console.log('openGraphImageUrl', openGraphImageUrl);
   return {
     title: title,
     description: bio,
     imageUrl: imageUrl,
     openGraph: {
-      images: imageUrl,
+      // images: imageUrl,
+      title: title,
+      description: bio,
+      images: [
+        {
+          url: openGraphImageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
   };
 }

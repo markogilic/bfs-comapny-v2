@@ -24,6 +24,7 @@ export default function Home() {
       <AboutUs />
       <Gallery />
       <Bloags postsMetadata={postsMetadata} />
+      <InstagramPost />
       <NavigateToProgram />
     </main>
   );
