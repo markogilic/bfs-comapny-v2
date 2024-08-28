@@ -8,6 +8,7 @@ import FormError from './from-error';
 import FormSuccess from './form-success';
 import { RegisterSchema } from '@/schemas';
 import { registration } from '@/actions/registration';
+import { ClipLoader } from 'react-spinners';
 
 export const RegisterForm = () => {
   const [isPending, startTransition] = useTransition();
@@ -52,7 +53,7 @@ export const RegisterForm = () => {
             type="text"
             disabled={isPending}
             className={clsx(
-              `text-md block px-3 py-2  rounded-lg w-full 
+              `text-md block px-3 py-2  rounded-lg w-full disabled:bg-slate-100
             bg-white border-2 border-gray-300 placeholder-gray-300 shadow-md focus:outline-none`,
               errors.name && 'border-red-500'
             )}
@@ -74,7 +75,7 @@ export const RegisterForm = () => {
             type="email"
             disabled={isPending}
             className={clsx(
-              `text-md block px-3 py-2  rounded-lg w-full 
+              `text-md block px-3 py-2  rounded-lg w-full disabled:bg-slate-100
             bg-white border-2 border-gray-300 placeholder-gray-300 shadow-md focus:outline-none`,
               errors.email && 'border-red-500'
             )}
@@ -85,7 +86,7 @@ export const RegisterForm = () => {
             </p>
           )}
         </div>
-        <div className="w-full relative">
+        <div className="w-full relative mb-4">
           <label htmlFor="password" className="px-1 text-sm text-gray-600">
             Password:
           </label>
@@ -96,7 +97,7 @@ export const RegisterForm = () => {
             type="password"
             disabled={isPending}
             className={clsx(
-              `text-md block px-3 py-2  rounded-lg w-full 
+              `text-md block px-3 py-2  rounded-lg w-full disabled:bg-slate-100
             bg-white border-2 border-gray-300 placeholder-gray-300 shadow-md focus:outline-none`,
               errors.password && 'border-red-500'
             )}
@@ -115,7 +116,7 @@ export const RegisterForm = () => {
           disabled={isPending}
           className="w-full bg-bg-light py-3 mt-4 rounded-lg shadow-md text-white font-semibold hover:bg-bg-light/90"
         >
-          Prijavite se
+          {isPending ? <ClipLoader size={20} color="#fff" /> : 'Registrujte se'}
         </button>
       </div>
       {/* {errors.email && <p className="mt-4">{errors.email.message}</p>} */}
