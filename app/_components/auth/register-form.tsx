@@ -114,7 +114,7 @@ export const RegisterForm = () => {
         <button
           type="submit"
           disabled={isPending}
-          className="w-full bg-bg-light py-3 mt-4 rounded-lg shadow-md text-white font-semibold hover:bg-bg-light/90"
+          className="w-full bg-bg-light py-3 mt-4 flex justify-center items-center rounded-lg shadow-md text-white font-semibold hover:bg-bg-light/90"
         >
           {isPending ? <ClipLoader size={20} color="#fff" /> : 'Registrujte se'}
         </button>
