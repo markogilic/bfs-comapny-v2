@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { LoginForm } from '@/app/_components/auth/login-form';
-import { Social } from '@/app/_components/auth/social';
+import Social from '@/app/_components/auth/social';
 
 const LoginPage = () => {
   return (

@@ -7,7 +7,7 @@ import { FcVideoProjector } from 'react-icons/fc';
 import { FcReadingEbook } from 'react-icons/fc';
 import { FcKey } from 'react-icons/fc';
 import discount from '@/public/des/discount.png';
-import { Social } from '@/app/_components/auth/social';
+import Social from '@/app/_components/auth/social';
 
 const RegisterPage = () => {
   return (

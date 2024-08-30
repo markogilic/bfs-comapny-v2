@@ -10,8 +10,15 @@ import FormError from './from-error';
 import FormSuccess from './form-success';
 import Link from 'next/link';
 import { login } from '@/actions/login';
+import { useSearchParams } from 'next/navigation';
 
 export const LoginForm = () => {
+  const searchParams = useSearchParams();
+  const urlError =
+    searchParams.get('error') === 'OAuthAccountNotLinked'
+      ? 'Molimo vas da se prijavite sa emailom i lozinkom'
+      : '';
+
   const [showTwoFactor, setShowTwoFactor] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | undefined>('');
@@ -29,8 +36,6 @@ export const LoginForm = () => {
       password: '',
     },
   });
-
-  const urlError = '';
 
   const onSubmit = async (data: z.infer<typeof LoginSchema>) => {
     setError('');
