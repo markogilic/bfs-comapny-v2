@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-
+import { Suspense } from 'react';
 import { LoginForm } from '@/app/_components/auth/login-form';
 import Social from '@/app/_components/auth/social';
 
@@ -11,7 +11,9 @@ const LoginPage = () => {
         <h2 className="text-lg font-semibold text-bg-light text-center">
           Ulogujte se
         </h2>
-        <LoginForm />
+        <Suspense fallback={<div>loading...</div>}>
+          <LoginForm />
+        </Suspense>
 
         <p>
           Jos uvek nemate nalog?{' '}
