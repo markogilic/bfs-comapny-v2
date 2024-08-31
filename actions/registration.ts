@@ -4,6 +4,8 @@ import bcrypt from 'bcryptjs';
 import { RegisterSchema } from '@/schemas';
 import { db } from '@/lib/db';
 import { getUserByEmail } from '@/data/user';
+import { generateVerificationToken } from '@/lib/tokens';
+import { sendVerificationEmail } from '@/lib/mail';
 export const registration = async (data: z.infer<typeof RegisterSchema>) => {
   const validateFields = RegisterSchema.safeParse(data);
 
@@ -25,8 +27,13 @@ export const registration = async (data: z.infer<typeof RegisterSchema>) => {
       password: hashedPassword,
     },
   });
+  const verificationToken = await generateVerificationToken(email);
+  await sendVerificationEmail(
+    verificationToken.email,
+    verificationToken.token,
+    name
+  );
 
-  // todo:send verification toke email
   return {
     success:
       'Uspesno ste kreirali nalog, link za akativaciju vam je poslat na email.',

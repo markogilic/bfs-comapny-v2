@@ -3,7 +3,7 @@ export const publicRoutes = [
   '/programs',
   '/gallery',
   '/blog',
-  '/new-verification',
+  '/auth/new-verification',
 ];
 
 export const authRoutes = ['/auth/login', '/auth/register', '/auth/error'];
