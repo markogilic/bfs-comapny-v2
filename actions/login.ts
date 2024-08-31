@@ -29,7 +29,8 @@ export const login = async (data: z.infer<typeof LoginSchema>) => {
     );
     await sendVerificationEmail(
       verificationToken.email,
-      verificationToken.token
+      verificationToken.token,
+      existingUser?.name || ''
     );
     return {
       error: 'Nalog nije aktiviran, link za aktivaciju vam je poslat na email',
