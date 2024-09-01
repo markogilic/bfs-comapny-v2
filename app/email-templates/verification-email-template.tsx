@@ -25,7 +25,7 @@ export default function EmailVerificationTemplate({
         <Section style={sectionStyle}>
           <Img
             style={logo}
-            src="https://lh3.googleusercontent.com/a-/ALV-UjWKdyjyZmVbPeEGIzd2M7rOv89RUHYURj9VhxmyLEPwrzhUlaI=s64-p-k-rw-no"
+            src="https://lh3.googleusercontent.com/a/ACg8ocKxNC1SQ7KviK9MB6XW6I1V5N9WeChm6-EUQSlpP4DZGGPmirg=s288-c-no"
             width="96"
             height="96"
             alt="bfs comapny logo"
