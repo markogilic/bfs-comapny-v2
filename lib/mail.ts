@@ -12,7 +12,7 @@ export const sendVerificationEmail = async (
 
   await resend.emails.send({
     from: 'From BFS do-not-replay<onboarding@resend.dev>',
-    to: email,
+    to: [email],
     subject: 'Email verification',
     react: VerificationEmailTemplate({
       urlLink: confirmLink,
