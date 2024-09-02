@@ -30,3 +30,21 @@ export const RegisterSchema = z.object({
     message: 'Molimo vas unesite ime',
   }),
 });
+
+export const ResetPassSchema = z.object({
+  email: z
+    .string()
+    .min(1, { message: 'Unestite email' })
+    .email({ message: 'Unesite validan email' }),
+});
+
+export const NewPasswordSchema = z.object({
+  password: z
+    .string()
+    .min(1, {
+      message: 'Molimo vas unesite lozinku',
+    })
+    .min(6, {
+      message: 'Lozinka mora imati najmanje 6 karaktera',
+    }),
+});

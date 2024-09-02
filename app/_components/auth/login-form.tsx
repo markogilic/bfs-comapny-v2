@@ -143,7 +143,7 @@ export const LoginForm = () => {
         )}
 
         <p className="mt-2 flex justify-start items-center gap-2">
-          <Link href="/reset" className="flex items-center gap-2">
+          <Link href="/auth/pass-reset" className="flex items-center gap-2">
             <FaRegQuestionCircle color="red" />
             <span className="underline"> Zaboravili ste lozinku?</span>
           </Link>
