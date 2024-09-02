@@ -11,8 +11,8 @@ export const sendVerificationEmail = async (
   const confirmLink = `${process.env.BASE_URL}/auth/new-verification?token=${token}`;
 
   await resend.emails.send({
-    from: 'From BFS do-not-replay<onboarding@resend.dev>',
-    to: [email],
+    from: 'From BFS do-not-replay<office@bfscompany.rs>',
+    to: email,
     subject: 'Email verification',
     react: VerificationEmailTemplate({
       urlLink: confirmLink,
