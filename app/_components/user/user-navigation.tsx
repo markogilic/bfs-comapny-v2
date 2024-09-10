@@ -13,10 +13,11 @@ import { IoMdArrowDropdown } from 'react-icons/io';
 import { MdLogin } from 'react-icons/md';
 import { HiOutlineUserPlus } from 'react-icons/hi2';
 import { AnimatePresence, motion } from 'framer-motion';
+import type { Session } from 'next-auth';
 
 import Image from 'next/image';
 
-const UserNaviagtion = ({ session }: any) => {
+const UserNaviagtion = ({ session }: { session: Session | null }) => {
   // const { data } = useSession();
   // const user = data?.user;
   // const user = useCurrentUser();
@@ -38,10 +39,10 @@ const UserNaviagtion = ({ session }: any) => {
           onClick={openMenu}
           className="flex items-center relative rounded-full  shadow-inner px-4 py-1 border border-slate-300 cursor-pointer"
         >
-          {session ? (
+          {session?.user ? (
             <>
               <span className="text-slate-600 font-semibold mr-2">
-                {session.user.name}
+                {session?.user?.name}
               </span>
               <div className="mr-2">
                 {session.user.image ? (

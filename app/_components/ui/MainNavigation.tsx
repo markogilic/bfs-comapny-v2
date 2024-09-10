@@ -4,20 +4,9 @@ import MobileNav from './MobileNav';
 import UserNaviagtion from '@/app/_components/user/user-navigation';
 import { UseScreenWidth } from '../../hooks/screen-width';
 
-interface SessionProp {
-  session?: {
-    user: {
-      name: string;
-      email: string;
-      image?: string;
-      id: string;
-      role: 'USER' | 'ADMIN';
-    };
-    expires: string;
-  } | null;
-}
+import type { Session } from 'next-auth';
 
-const MainNavigation = ({ session }: any) => {
+const MainNavigation = ({ session }: { session: Session | null }) => {
   //   const [width, setWidth] = useState(0);
   //   const updateWidth = () => {
   //     const newWidth = window.innerWidth;
@@ -31,6 +20,8 @@ const MainNavigation = ({ session }: any) => {
   //   }, []);
 
   const width = UseScreenWidth();
+
+  console.log(session);
 
   if (width < 768) {
     return <MobileNav />;

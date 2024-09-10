@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -29,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics />
+
       <body className="relative ">
         <Header />
         {children}
