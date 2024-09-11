@@ -5,7 +5,6 @@ import MainNavigation from './ui/MainNavigation';
 import { auth } from '@/auth';
 
 const Header = async () => {
-  const session = await auth();
   return (
     <header className=" w-full fixed top-0 flex justify-between md:px-[150px] px-3 py-3 bg-slate-50 shadow-md bg-opacity-90 items-center z-[999] backdrop-blur-[0.5rem]">
       {/* logo div */}
@@ -14,7 +13,7 @@ const Header = async () => {
           <Image priority src={HeaderLogo} alt="Logo image" />
         </Link>
       </div>
-      <MainNavigation session={session} />
+      <MainNavigation />
     </header>
   );
 };
