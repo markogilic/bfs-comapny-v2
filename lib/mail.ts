@@ -38,3 +38,12 @@ export const sendPasswordResetEmail = async (
     }),
   });
 };
+
+export const sendTwoFactorTokenEmail = async (email: string, token: string) => {
+  await resend.emails.send({
+    from: 'do-not-replay<office@bfscompany.rs>',
+    to: email,
+    subject: 'Vas 2FA borj ',
+    html: `<p>Vas 2FA kod je: ${token}</p>`,
+  });
+};

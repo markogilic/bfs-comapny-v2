@@ -11,6 +11,7 @@ import FormSuccess from './form-success';
 import Link from 'next/link';
 import { login } from '@/actions/login';
 import { useSearchParams } from 'next/navigation';
+import { ClipLoader } from 'react-spinners';
 
 export const LoginForm = () => {
   const searchParams = useSearchParams();
@@ -153,9 +154,15 @@ export const LoginForm = () => {
         <button
           type="submit"
           disabled={isPending}
-          className="w-full bg-bg-light py-3 mt-4 rounded-lg shadow-md text-white font-semibold hover:bg-bg-light/90"
+          className="w-full flex justify-center items-center bg-bg-light py-3 mt-4 rounded-lg shadow-md text-white font-semibold hover:bg-bg-light/90"
         >
-          {showTwoFactor ? 'Potvrdi' : 'Prijavi se'}
+          {isPending ? (
+            <ClipLoader color="white" size={20} />
+          ) : showTwoFactor ? (
+            'Potvrdi'
+          ) : (
+            'Prijavi se'
+          )}
         </button>
       </div>
       {/* {errors.email && <p className="mt-4">{errors.email.message}</p>} */}
