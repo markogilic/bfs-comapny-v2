@@ -62,6 +62,7 @@ export const {
 
       if (!existinUser) return token;
       token.role = existinUser.role;
+
       return token;
     },
   },

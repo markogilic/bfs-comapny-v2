@@ -3,6 +3,7 @@ import { auth, signOut } from '@/auth';
 const DashBoardPage = async () => {
   const session = await auth();
 
+  console.log(session);
   return (
     <div className=" h-screen flex flex-col gap-6 justify-center items-center">
       <h1>DashBoard Page</h1>
