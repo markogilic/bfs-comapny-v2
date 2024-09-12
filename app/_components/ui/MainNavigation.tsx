@@ -1,10 +1,8 @@
 'use client';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
-import { UserNav } from '@/app/_components/user/user-nav';
-import { UseScreenWidth } from '../../hooks/screen-width';
 
-import type { Session } from 'next-auth';
+import { UseScreenWidth } from '../../hooks/screen-width';
 
 const MainNavigation = () => {
   //   const [width, setWidth] = useState(0);
@@ -24,12 +22,7 @@ const MainNavigation = () => {
   if (width < 768) {
     return <MobileNav />;
   }
-  return (
-    <>
-      <DesktopNav />
-      <UserNav />
-    </>
-  );
+  return <DesktopNav />;
 };
 
 export default MainNavigation;
