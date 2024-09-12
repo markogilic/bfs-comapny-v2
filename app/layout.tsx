@@ -6,8 +6,6 @@ import Header from '@/app/_components/header';
 import Footer from '@/app/_components/footer';
 import { Toaster } from 'react-hot-toast';
 import GoogleAnalytics from './_components/GoogleAnalytics';
-import { SessionProvider } from 'next-auth/react';
-import { auth } from '@/auth';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,21 +26,17 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = await auth();
-
   return (
-    <SessionProvider session={session}>
-      <html lang="en">
-        <GoogleAnalytics />
+    <html lang="en">
+      <GoogleAnalytics />
 
-        <body className="relative ">
-          <Header />
-          {children}
-          <Footer />
+      <body className="relative ">
+        <Header />
+        {children}
+        <Footer />
 
-          <Toaster position="bottom-center" />
-        </body>
-      </html>
-    </SessionProvider>
+        <Toaster position="bottom-center" />
+      </body>
+    </html>
   );
 }
