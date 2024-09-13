@@ -1,8 +1,10 @@
 export const publicRoutes = [
   '/',
   '/programs',
+  '/programs/[id]',
   '/gallery',
   '/blog',
+  '/blog/[slug]',
   '/auth/new-verification',
 ];
 
