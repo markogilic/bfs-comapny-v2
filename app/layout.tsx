@@ -6,7 +6,6 @@ import Header from '@/app/_components/header';
 import Footer from '@/app/_components/footer';
 import { Toaster } from 'react-hot-toast';
 import GoogleAnalytics from './_components/GoogleAnalytics';
-import { auth } from '@/auth';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,8 +26,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = await auth();
-  console.log('session', session);
   return (
     <html lang="en">
       <GoogleAnalytics />
