@@ -2,7 +2,6 @@ import Image from 'next/image';
 import HeaderLogo from '../../public/des/BFS-logo.svg';
 import Link from 'next/link';
 import MainNavigation from './ui/MainNavigation';
-import { auth } from '@/auth';
 
 const Header = () => {
   return (
