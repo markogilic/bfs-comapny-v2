@@ -26,6 +26,7 @@ import fkzmImage from '@/public/des/programme-3.jpg';
 import fzpImage from '@/public/des/programme-7.jpg';
 import emolidImage from '@/public/des/programme-2.jpg';
 import programMentorstva from '@/public/des/programme-4.jpg';
+import uspesnoPregovarnje from '@/public/des/programme-9.jpg';
 
 //gallery images
 
@@ -127,7 +128,7 @@ export const topPrograms = [
   {
     id: 1,
     imageUrl: fkzmImage,
-    typeData: 'individual',
+    typeData: 'finansije',
     type: 'Individualni program ',
     title: 'FINANSIJSKI KONTROLING ZA MENADŽERE',
     desc: 'Program je dizajniran za obuku menadžera u ključnim veštinama finansijskog kontrolinga. Kroz praktične primere polaznici će steći znanja potrebna za donošenje ključnih poslovnih odluka.',
@@ -156,7 +157,7 @@ export const topPrograms = [
     id: 2,
     imageUrl: fzpImage,
     type: 'Grupni program',
-    typeData: 'group',
+    typeData: 'finansije',
     title: 'finansije za preduzetnike',
     desc: 'Ovaj program pruža ključna znanja o upravljanju finansijama u malim i srednjim preduzećima. Učesnici će naučiti kako efikasno planirati budžet, pratiti troškove i optimizovati profitabilnost.',
     stats: {
@@ -186,7 +187,7 @@ export const topPrograms = [
   {
     id: 3,
     imageUrl: emolidImage,
-    typeData: 'group',
+    typeData: 'soft-skills',
     type: 'Grupne edukacije',
     title: 'Emocionalna inteligencija i liderstvo',
     desc: 'Program je namenjen liderima koji žele da razviju emocionalne veštine za efikasnije upravljanje timovima. Polaznici će naučiti kako da regulišu emocije, u cilju unapređenja komunikacije i odlučivanja.',
@@ -214,11 +215,39 @@ export const topPrograms = [
       optionalFileds: [],
     },
   },
+  {
+    id: 9,
+    imageUrl: uspesnoPregovarnje,
+    typeData: 'soft-skills',
+    type: 'Grupne edukacije',
+    title: 'Veštine uspešnog pregovaranja',
+    desc: 'Ova edukacija pruža polaznicima dubok uvid u tehnike i strategije koje su ključne za postizanje efikasnih i produktivnih pregovora u različitim poslovnim situacijama.',
+    stats: {
+      duration: 'Jednodnevna edukacija',
+      location: 'Online',
+      price: '130e',
+    },
+    fullDesc: {
+      main: 'Ova edukacija pruža polaznicima dubok uvid u tehnike i strategije koje su ključne za postizanje efikasnih i produktivnih pregovora u različitim poslovnim situacijama. Tokom kursa, polaznici će naučiti kako da identifikuju svoje ciljeve, razumeju interese suprotne strane, razvijaju pregovaračku strategiju i efikasno komuniciraju svoje stavove.',
+      tags: [],
+      titleList: 'Edukacija obuhvata sledeće teme:',
+      list: [
+        'Razumevanje procesa pregovaranja, definisanje ciljeva i strategija.',
+        'Razvijanje veština slušanja, postavljanja pitanja i izražavanja stavova jasno i ubedljivo.',
+        'Procena situacije, identifikacija interesa i potreba obe strane, prepoznavanje mogućih kompromisa.',
+        'Rešavanje konflikata, odnosno upotreba tehnika za rešavanje sukoba i prevazilaženje prepreka tokom pregovora.',
+        'Zaključivanje sporazuma, odnosno tehnike za postizanje obostrano prihvatljivih rešenja i zaključivanje uspešnih pregovora.',
+      ],
+      optionalFileds: [],
+      final:
+        'Kroz kombinaciju teorijskog znanja, praktičnih vežbi i studija slučaja, polaznici će razviti svoje veštinepregovaranja i steknuti samopouzdanje u različitim pregovaračkim situacijama. Kurs je namenjenprofesionalcima iz različitih industrija, menadžerima, preduzetnicima i svima koji žele da unaprede svojusposobnost da uspešno pregovaraju i postižu svoje ciljeve.',
+    },
+  },
 
   {
     id: 5,
     imageUrl: IntFrontEnd,
-    typeData: 'group',
+    typeData: 'web-development',
     type: 'Grupne edukacije',
     title: 'Uvod u Frontend',
     desc: 'Ovaj kurs pruža osnovno upoznavanje sa front-end programiranjem, pokrivajući ključne tehnologije kao što su HTML, CSS i JavaScript.',
@@ -253,7 +282,7 @@ export const topPrograms = [
   {
     id: 6,
     imageUrl: HtmlCssJs,
-    typeData: 'group',
+    typeData: 'web-development',
     type: 'Grupne edukacije',
     title: ' Osnove HTML, CSS, JavaScript',
     desc: 'Ovaj kurs pruža temeljno upoznavanje sa osnovnim web tehnologijama HTML, CSS i JavaScript, omogućavajući polaznicima da kreiraju i stilizuju interaktivne web stranice.',
@@ -279,7 +308,7 @@ export const topPrograms = [
   {
     id: 7,
     imageUrl: reactJS,
-    typeData: 'group',
+    typeData: 'web-development',
     type: 'Grupne edukacije',
     title: 'Osnove React JS',
     desc: 'Ovaj kurs pruža osnovno upoznavanje sa React JS bibliotekom, omogućavajući polaznicima da kreiraju interaktivne web aplikacije.',

@@ -62,7 +62,10 @@ const SingleProgramFrame = ({ program }: { program: ProgramProps }) => {
         <div className="md:w-1/2 w-full mt-8 md:mt-0">
           <div className="md:w-[70%] mx-auto">
             <p className="font-bold text-lg">Prijavi se na program</p>
-            <ProgramForm programName={program.title} />
+            <ProgramForm
+              programName={program.title}
+              optionalFields={fullDesc.optionalFileds}
+            />
           </div>
         </div>
       </div>

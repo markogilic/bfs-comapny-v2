@@ -7,46 +7,86 @@ import chekIcon from '@/public/des/carbon_checkmark-filled.svg';
 
 const ProgramsFrame = () => {
   const [activeTab, setActiveTab] = useState('');
-  const [leftBtn, setLeftBtn] = useState(false);
-  const [rightBtn, setRightBtn] = useState(false);
+  // const [leftBtn, setLeftBtn] = useState(false);
+  // const [rightBtn, setRightBtn] = useState(false);
 
-  const hadleLeftBtn = () => {
-    if (activeTab === 'group') setActiveTab('');
-    if (rightBtn) setRightBtn(false);
-    if (activeTab === 'individual' || activeTab === '') setActiveTab('group');
+  // const hadleLeftBtn = () => {
+  //   if (activeTab === 'group') setActiveTab('');
+  //   if (rightBtn) setRightBtn(false);
+  //   if (activeTab === 'individual' || activeTab === '') setActiveTab('group');
 
-    setLeftBtn(!leftBtn);
+  //   setLeftBtn(!leftBtn);
+  // };
+  // const hadleRightBtn = () => {
+  //   if (activeTab === 'individual') setActiveTab('');
+  //   if (leftBtn) setLeftBtn(false);
+  //   if (activeTab === 'group' || activeTab === '') setActiveTab('individual');
+
+  //   setRightBtn(!rightBtn);
+  // };
+  const hadleFinBtn = () => {
+    if (activeTab === '' || activeTab !== 'finansije') {
+      setActiveTab('finansije');
+    }
+    if (activeTab === 'finansije') {
+      setActiveTab('');
+    }
+
+    // if (softBtn) setSoftBtn(false);
+    // if (activeTab === 'soft-skills' || activeTab === '')
+    //   setActiveTab('finansije');
+
+    // setFinBtn(!finBtn);
   };
-  const hadleRightBtn = () => {
-    if (activeTab === 'individual') setActiveTab('');
-    if (leftBtn) setLeftBtn(false);
-    if (activeTab === 'group' || activeTab === '') setActiveTab('individual');
-
-    setRightBtn(!rightBtn);
+  const hadleSoftBtn = () => {
+    if (activeTab === 'soft-skills') {
+      setActiveTab('');
+    }
+    if (activeTab === '' || activeTab !== 'soft-skills') {
+      setActiveTab('soft-skills');
+    }
+  };
+  const handleWebBtn = () => {
+    if (activeTab === 'web-development') {
+      setActiveTab('');
+    }
+    if (activeTab === '' || activeTab !== 'web-development') {
+      setActiveTab('web-development');
+    }
   };
 
   return (
     <div className=" flex flex-col md:gap-12 gap-4 md:pb-[96px] ">
       <div className="md:flex-row gap-4 w-[90%]  mx-auto flex flex-col  md:w-fit">
         <button
-          onClick={hadleLeftBtn}
+          onClick={hadleFinBtn}
           className={clsx(
             'md:w-[320px] md:hover:scale-[1.025] text-center  rounded-[4px] text-bg-light w-full uppercase py-[10px] md:px-6 bg-card-bg transition-transform',
-            leftBtn &&
+            activeTab === 'finansije' &&
               'border-2  border-bg-light font-semibold  bg-bg-light/10 '
           )}
         >
-          grupne edukacije
+          Finansije
         </button>
         <button
-          onClick={hadleRightBtn}
+          onClick={hadleSoftBtn}
           className={clsx(
             'md:w-[320px] md:hover:scale-[1.025] rounded-[4px]  text-bg-light uppercase py-[10px] md:px-6 bg-card-bg transition-transform',
-            rightBtn &&
+            activeTab === 'soft-skills' &&
               'border-2  border-bg-light font-semibold  bg-bg-light/10 '
           )}
         >
-          individulani programi
+          soft skills
+        </button>
+        <button
+          onClick={handleWebBtn}
+          className={clsx(
+            'md:w-[320px] md:hover:scale-[1.025] rounded-[4px]  text-bg-light uppercase py-[10px] md:px-6 bg-card-bg transition-transform',
+            activeTab === 'web-development' &&
+              'border-2  border-bg-light font-semibold  bg-bg-light/10 '
+          )}
+        >
+          web development
         </button>
       </div>
       <div className="w-full">

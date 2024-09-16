@@ -45,6 +45,15 @@ export const {
 
       return true;
     },
+    async jwt({ token }) {
+      if (!token.sub) return token;
+      const existinUser = await getUserById(token.sub);
+
+      if (!existinUser) return token;
+      token.role = existinUser.role;
+
+      return token;
+    },
 
     async session({ token, session }) {
       if (token.sub && session.user) {
@@ -55,15 +64,6 @@ export const {
       }
 
       return session;
-    },
-    async jwt({ token }) {
-      if (!token.sub) return token;
-      const existinUser = await getUserById(token.sub);
-
-      if (!existinUser) return token;
-      token.role = existinUser.role;
-
-      return token;
     },
   },
   adapter: PrismaAdapter(db),

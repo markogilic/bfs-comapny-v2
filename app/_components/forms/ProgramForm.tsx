@@ -14,6 +14,8 @@ type FormValues = {
   email: string;
   phone: number;
   acceptTerms: boolean;
+  choseFileds?: string;
+  hasOptionalFields?: boolean;
 };
 
 const schema = yup
@@ -35,6 +37,7 @@ const schema = yup
       .boolean()
       .required()
       .oneOf([true], 'Morate oznaciti ovo polje'),
+    choseFileds: yup.string().notOneOf([''], 'Morate izabrati oblast'),
   })
   .required();
 
@@ -42,7 +45,13 @@ const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 const templateId = process.env.NEXT_PUBLIC_EMAILJS_PROGRAM_TEMPLATE_ID;
 const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-const ProgramForm = ({ programName }: { programName: string }) => {
+const ProgramForm = ({
+  programName,
+  optionalFields,
+}: {
+  programName: string;
+  optionalFields?: string[];
+}) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
@@ -61,7 +70,14 @@ const ProgramForm = ({ programName }: { programName: string }) => {
       email: email,
       phone: phone,
       kursName: programName,
+      choseFileds: '',
+      hasOptionalFields: false,
     };
+    if ((optionalFields?.length ?? 0) > 0) {
+      const { choseFileds } = data;
+      templateParams.choseFileds = choseFileds ?? '';
+      templateParams['hasOptionalFields'] = true;
+    }
     if (!serviceId || !templateId || !publicKey) {
       console.error('EmailJS not configured');
       return;
@@ -146,6 +162,29 @@ const ProgramForm = ({ programName }: { programName: string }) => {
         />
         {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
       </div>
+      {(optionalFields?.length ?? 0) > 0 && (
+        <div>
+          <label htmlFor="choseFileds">Izaberi oblast:</label>
+          <select
+            {...register('choseFileds')}
+            name="choseFileds"
+            id="choseFileds"
+            className="w-full mt-1 rounded-[4px] px-[10px] py-2  focus:outline-none border-[1px] border-black bg-card-bg"
+          >
+            <option value="" disabled>
+              Izaberi oblast
+            </option>
+            {optionalFields?.map((field, index) => (
+              <option key={index} value={field} className=" font-semibold">
+                {field}
+              </option>
+            ))}
+          </select>
+          {errors.choseFileds && (
+            <p className="text-red-500">{errors.choseFileds.message}</p>
+          )}
+        </div>
+      )}
       <div className="mt-6">
         <div className="flex justify-center items-center gap-4">
           <input
