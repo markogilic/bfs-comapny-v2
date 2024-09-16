@@ -31,18 +31,19 @@ export default async function RootLayout({
   const session = await auth();
   console.log('Session from root layout', session);
   return (
-    <html lang="en">
-      <GoogleAnalytics />
+    <SessionProvider session={session}>
+      <html lang="en">
+        <GoogleAnalytics />
 
-      <body className="relative ">
-        <SessionProvider session={session}>
+        <body className="relative ">
           <Header />
 
           {children}
           <Footer />
-        </SessionProvider>
-        <Toaster position="bottom-center" />
-      </body>
-    </html>
+
+          <Toaster position="bottom-center" />
+        </body>
+      </html>
+    </SessionProvider>
   );
 }
