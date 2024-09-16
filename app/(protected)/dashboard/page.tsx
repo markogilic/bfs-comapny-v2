@@ -1,12 +1,12 @@
 import { auth, signOut } from '@/auth';
 
 const DashBoardPage = async () => {
-  // const session = await auth();
+  const session = await auth();
 
   return (
     <div className=" h-screen flex flex-col gap-6 justify-center items-center">
       <h1>DashBoard Page</h1>
-      {/* <p className="w-[600px]">Session: {JSON.stringify(session)}</p> */}
+      <p className="w-[600px]">Session: {JSON.stringify(session)}</p>
       <form
         action={async () => {
           'use server';
