@@ -6,7 +6,6 @@ import { auth } from '@/auth';
 
 export default async function Header() {
   const session = await auth();
-  console.log('Session from header', session);
 
   return (
     <header className=" w-full fixed top-0 flex justify-between md:px-[150px] px-3 py-3 bg-slate-50 shadow-md bg-opacity-90 items-center z-[999] backdrop-blur-[0.5rem]">
@@ -16,7 +15,7 @@ export default async function Header() {
           <Image priority src={HeaderLogo} alt="Logo image" />
         </Link>
       </div>
-      <MainNavigation />
+      <MainNavigation session={session} />
     </header>
   );
 }
