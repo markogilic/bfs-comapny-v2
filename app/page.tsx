@@ -8,6 +8,7 @@ import AboutUs from './_components/sections/AboutUs';
 import Gallery from './_components/sections/Gallery';
 import Bloags from './_components/sections/Bloags';
 import NavigateToProgram from './_components/sections/NavigateToProgram';
+
 // import InstagramPost from './_components/sections/InstagramPost';
 import getPostMetadata from '@/lib/getPostMetaData';
 

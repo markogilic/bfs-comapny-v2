@@ -6,7 +6,8 @@ import Header from '@/app/_components/header';
 import Footer from '@/app/_components/footer';
 import { Toaster } from 'react-hot-toast';
 import GoogleAnalytics from './_components/GoogleAnalytics';
-import { UserNavigation } from './_components/auth/user-navigation';
+import { SessionProvider } from 'next-auth/react';
+import { auth } from '@/auth';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,16 +28,19 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await auth();
+  console.log('Session from root layout', session);
   return (
     <html lang="en">
       <GoogleAnalytics />
 
       <body className="relative ">
-        <Header />
-        <UserNavigation />
-        {children}
-        <Footer />
+        <SessionProvider session={session}>
+          <Header />
 
+          {children}
+          <Footer />
+        </SessionProvider>
         <Toaster position="bottom-center" />
       </body>
     </html>
