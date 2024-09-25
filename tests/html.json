@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "Home Tool Markup Language",
+      "Hyperlinks and Text Markup Language",
+      "Hyperlinks and Text Modulation Language"
+    ],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "question": "Which HTML element is used to define the title of a document?",
+    "options": [
+      "<body>",
+      "<head>",
+      "<title>",
+      "<header>"
+    ],
+    "answer": "<title>"
+  },
+  {
+    "question": "How can you make a numbered list in HTML?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "answer": "<ol>"
+  },
+  {
+    "question": "What is the correct way to create a hyperlink in HTML?",
+    "options": [
+      "<a url='www.example.com'>Link</a>",
+      "<a href='www.example.com'>Link</a>",
+      "<a link='www.example.com'>Link</a>",
+      "<link href='www.example.com'>Link</a>"
+    ],
+    "answer": "<a href='www.example.com'>Link</a>"
+  },
+  {
+    "question": "Which HTML tag is used for inserting an image?",
+    "options": [
+      "<img>",
+      "<picture>",
+      "<src>",
+      "<image>"
+    ],
+    "answer": "<img>"
+  },
+  {
+    "question": "How do you create a comment in HTML?",
+    "options": [
+      "<!-- Comment -->",
+      "// Comment",
+      "/* Comment */",
+      "# Comment"
+    ],
+    "answer": "<!-- Comment -->"
+  },
+  {
+    "question": "Which of the following tags is used to define an unordered list?",
+    "options": [
+      "<li>",
+      "<ol>",
+      "<ul>",
+      "<list>"
+    ],
+    "answer": "<ul>"
+  },
+  {
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": [
+      "<lb>",
+      "<br>",
+      "<break>",
+      "<line>"
+    ],
+    "answer": "<br>"
+  },
+  {
+    "question": "Which HTML attribute specifies an alternate text for an image?",
+    "options": [
+      "title",
+      "alt",
+      "src",
+      "text"
+    ],
+    "answer": "alt"
+  },
+  {
+    "question": "Which tag is used to create a table in HTML?",
+    "options": [
+      "<table>",
+      "<tab>",
+      "<td>",
+      "<th>"
+    ],
+    "answer": "<table>"
+  },
+  {
+    "question": "Which HTML attribute is used to define inline styles?",
+    "options": [
+      "font",
+      "style",
+      "class",
+      "styles"
+    ],
+    "answer": "style"
+  },
+  {
+    "question": "What is the purpose of the <meta> tag?",
+    "options": [
+      "To link to external CSS files",
+      "To define metadata about the document",
+      "To create hyperlinks",
+      "To embed multimedia content"
+    ],
+    "answer": "To define metadata about the document"
+  },
+  {
+    "question": "Which HTML tag is used to define the footer of a document?",
+    "options": [
+      "<bottom>",
+      "<footer>",
+      "<foot>",
+      "<end>"
+    ],
+    "answer": "<footer>"
+  },
+  {
+    "question": "How do you specify a background color for an HTML page?",
+    "options": [
+      "<background-color>",
+      "<body style='background-color:color;'>",
+      "<color='background'>",
+      "<bgcolor>"
+    ],
+    "answer": "<body style='background-color:color;'>"
+  },
+  {
+    "question": "What does the <h1> tag represent in HTML?",
+    "options": [
+      "Header 1",
+      "Hyperlink 1",
+      "High-priority text",
+      "Heading 1"
+    ],
+    "answer": "Heading 1"
+  },
+  {
+    "question": "Which tag is used to define a paragraph in HTML?",
+    "options": [
+      "<para>",
+      "<p>",
+      "<text>",
+      "<paragraph>"
+    ],
+    "answer": "<p>"
+  },
+  {
+    "question": "How do you open a link in a new tab in HTML?",
+    "options": [
+      "target='_self'",
+      "target='_blank'",
+      "target='_new'",
+      "target='_window'"
+    ],
+    "answer": "target='_blank'"
+  },
+  {
+    "question": "Which tag is used to display preformatted text in HTML?",
+    "options": [
+      "<code>",
+      "<pre>",
+      "<format>",
+      "<text>"
+    ],
+    "answer": "<pre>"
+  },
+  {
+    "question": "Which of the following is the correct way to make text bold in HTML?",
+    "options": [
+      "<strong>",
+      "<bold>",
+      "<bld>",
+      "<btext>"
+    ],
+    "answer": "<strong>"
+  },
+  {
+    "question": "What is the correct syntax for adding a video to an HTML page?",
+    "options": [
+      "<video controls src='video.mp4'>",
+      "<video src='video.mp4'>",
+      "<vid src='video.mp4' controls>",
+      "<media src='video.mp4' controls>"
+    ],
+    "answer": "<video controls src='video.mp4'>"
+  },
+  {
+    "question": "Which HTML attribute is used to define the character encoding?",
+    "options": [
+      "charset",
+      "type",
+      "encode",
+      "code"
+    ],
+    "answer": "charset"
+  },
+  {
+    "question": "Which HTML tag is used to create a dropdown list?",
+    "options": [
+      "<input>",
+      "<select>",
+      "<dropdown>",
+      "<list>"
+    ],
+    "answer": "<select>"
+  },
+  {
+    "question": "How do you create a checkbox in HTML?",
+    "options": [
+      "<input type='checkbox'>",
+      "<check>",
+      "<input type='box'>",
+      "<input checkbox='true'>"
+    ],
+    "answer": "<input type='checkbox'>"
+  },
+  {
+    "question": "What is the correct way to specify a font in HTML?",
+    "options": [
+      "<font type='arial'>",
+      "<text style='arial'>",
+      "<style='font-family:arial;'>",
+      "<font-face='arial'>"
+    ],
+    "answer": "<style='font-family:arial;'>"
+  },
+  {
+    "question": "What is the default file extension for HTML files?",
+    "options": [
+      ".txt",
+      ".html",
+      ".htm",
+      ".web"
+    ],
+    "answer": ".html"
+  },
+  {
+    "question": "Which HTML tag is used to embed an external JavaScript file?",
+    "options": [
+      "<js>",
+      "<script>",
+      "<link>",
+      "<code>"
+    ],
+    "answer": "<script>"
+  },
+  {
+    "question": "How do you add an email link in HTML?",
+    "options": [
+      "<a href='email@example.com'>Email</a>",
+      "<a href='mailto:email@example.com'>Email</a>",
+      "<a href='emailto:email@example.com'>Email</a>",
+      "<a email='email@example.com'>Email</a>"
+    ],
+    "answer": "<a href='mailto:email@example.com'>Email</a>"
+  },
+  {
+    "question": "Which tag is used to add a section in an HTML document?",
+    "options": [
+      "<section>",
+      "<div>",
+      "<article>",
+      "<aside>"
+    ],
+    "answer": "<section>"
+  },
+  {
+    "question": "What is the purpose of the 'id' attribute in HTML?",
+    "options": [
+      "To define inline styles",
+      "To link to JavaScript functions",
+      "To uniquely identify an element",
+      "To style elements based on class"
+    ],
+    "answer": "To uniquely identify an element"
+  },
+  {
+    "question": "Which tag is used to define a navigation section in HTML?",
+    "options": [
+      "<nav>",
+      "<menu>",
+      "<navigate>",
+      "<section>"
+    ],
+    "answer": "<nav>"
+  }
+]

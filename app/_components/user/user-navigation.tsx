@@ -13,6 +13,7 @@ import { IoMdArrowDropdown } from 'react-icons/io';
 import { MdLogin } from 'react-icons/md';
 import { HiOutlineUserPlus } from 'react-icons/hi2';
 import { AnimatePresence, motion } from 'framer-motion';
+import { TbLayoutDashboard } from 'react-icons/tb';
 import { Session } from 'next-auth';
 import Image from 'next/image';
 
@@ -65,6 +66,9 @@ const UserNaviagtion = ({ session }: { session: Session | null }) => {
                       transition={{ duration: 0.2 }}
                       className="absolute left-0   mt-4 bg-white px-4  py-2 rounded-xl shadow-inner border border-slate-300"
                     >
+                      <UserMenuLink label="Dashboard" pageLink="/dashboard">
+                        <TbLayoutDashboard size={24} />
+                      </UserMenuLink>
                       <UserMenuLink
                         label="Podesavanja"
                         pageLink="/dashboard/settings"
