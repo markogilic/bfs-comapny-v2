@@ -11,6 +11,7 @@ interface TestListRecordsProps {
         testResult: string;
         testDate: Date;
         testType: string;
+        testTime: string;
       }[]
     | null;
 }
