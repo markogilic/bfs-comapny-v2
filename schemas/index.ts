@@ -48,3 +48,10 @@ export const NewPasswordSchema = z.object({
       message: 'Lozinka mora imati najmanje 6 karaktera',
     }),
 });
+
+export const TestRecordSchema = z.object({
+  userId: z.string(),
+  testType: z.string(),
+  testResult: z.string(),
+  testTime: z.string(),
+});

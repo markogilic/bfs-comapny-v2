@@ -34,8 +34,8 @@ model User {
   accounts      Account[]
   isTwoFactorEnabled Boolean @default(false)
   twoFactorConfirmation TwoFactorConfirmation?
- 
-  @@map("users")
+  webSkillTestRecords WebSkillTestRecord[]
+  @@map("users")  
 }
 
 model Account {
@@ -91,4 +91,15 @@ model TwoFactorConfirmation {
   userId  String
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   @@unique([userId])
+}
+
+model WebSkillTestRecord {
+  id        String   @id @default(cuid())
+  userId  String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  testType String
+  testTime String
+  testResult String
+  testDate DateTime
+ 
 }

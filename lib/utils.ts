@@ -71,3 +71,14 @@ export function formatDate(date: string) {
   });
   return formattedDate;
 }
+
+export function subtractTime(testTime: number, timeToSubtract: number) {
+  const totalSecondsIn10Minutes = timeToSubtract * 60; // 10 minutes in seconds
+
+  const remainingSeconds = totalSecondsIn10Minutes - testTime;
+
+  const minutes = Math.floor(remainingSeconds / 60);
+  const seconds = remainingSeconds % 60;
+
+  return { minutes, seconds };
+}

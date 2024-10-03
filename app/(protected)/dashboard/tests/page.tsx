@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { TestInit } from './_components/test-init';
 import { MainInfoTestFrame } from './_components/main-info-test-frame';
@@ -23,7 +23,7 @@ const TestsPage = () => {
   const type = useSelector((state: RootState) => state.test.testType);
 
   return (
-    <div className="flex justify-center px-8 py-4  w-full bg-white shadow-md h-fit">
+    <div className="flex justify-center  px-8 py-4  w-full bg-white shadow-md h-fit">
       {/* <TestInit type={type} /> */}
       {type === '' ? <MainInfoTestFrame /> : <TestInit type={type} />}
     </div>

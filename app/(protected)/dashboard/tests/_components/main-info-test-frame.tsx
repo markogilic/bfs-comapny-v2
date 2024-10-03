@@ -1,6 +1,20 @@
+'use client';
 import Image from 'next/image';
 import { TestNavigation } from './test-navigation';
+import { useSession } from 'next-auth/react';
+import { setUserId } from '../test-slice/testSlice';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 export const MainInfoTestFrame = () => {
+  const { data: session } = useSession();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (session?.user.id) {
+      dispatch(setUserId(session?.user.id));
+    }
+  }, [session, dispatch]);
+
   return (
     <div className=" flex ">
       <div>

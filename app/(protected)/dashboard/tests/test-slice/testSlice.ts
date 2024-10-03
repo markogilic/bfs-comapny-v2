@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { set } from 'date-fns';
 
 interface Question {
   question: string;
@@ -18,6 +17,8 @@ interface InitialStatProp {
   points: number;
   wrongAnswers: wrongAnswers[];
   testType: string;
+  userId: string;
+  timeRemaining: number;
 }
 
 const initialState: InitialStatProp = {
@@ -29,6 +30,8 @@ const initialState: InitialStatProp = {
   points: 0,
   wrongAnswers: [],
   testType: '',
+  userId: '',
+  timeRemaining: 600,
 };
 
 export const testSlice = createSlice({
@@ -69,10 +72,35 @@ export const testSlice = createSlice({
     finished: (state) => {
       state.status = 'finished';
     },
+    tick: (state) => {
+      state.timeRemaining--;
+    },
+    back: (state) => {
+      state.testType = '';
+      state.questions = [];
+      state.status = 'loading';
+      state.index = 0;
+      state.currAnswer = null;
+      state.points = 0;
+      state.wrongAnswers = [];
+      state.timeRemaining = 20;
+    },
+    setUserId: (state, action: PayloadAction<string>) => {
+      state.userId = action.payload;
+    },
   },
 });
 
-export const { dataRecived, start, newAnswer, next, finished, setTestType } =
-  testSlice.actions;
+export const {
+  dataRecived,
+  start,
+  newAnswer,
+  next,
+  finished,
+  setTestType,
+  back,
+  setUserId,
+  tick,
+} = testSlice.actions;
 
 export default testSlice.reducer;
