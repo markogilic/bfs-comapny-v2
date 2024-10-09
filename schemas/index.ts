@@ -55,3 +55,12 @@ export const TestRecordSchema = z.object({
   testResult: z.string(),
   testTime: z.string(),
 });
+
+export const EmoTestSchema = z.object({
+  userId: z.string(),
+  testType: z.string(),
+  totalPoints: z.number(),
+  tetPoints: z.number(),
+  seiPoints: z.number(),
+  eiePoints: z.number(),
+});

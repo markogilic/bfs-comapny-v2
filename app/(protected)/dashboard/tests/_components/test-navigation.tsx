@@ -23,28 +23,15 @@ export const TestNavigation = () => {
           <FaPeopleGroup size={32} color="#495696" />
           <p className="text-bg-light font-semibold text-sm">Stil Liderstva</p>
         </div>
-        <div className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2">
+        <div
+          onClick={() => dispatch(setTestType('emo'))}
+          className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+        >
           <FaHeadSideVirus size={30} color="#495696" />
           <p className="text-bg-light font-semibold text-sm text-center">
             Emocionalna Inteligencija
           </p>
         </div>
-        {/* <div className=" cursor-pointer w-fit rounded-full px-4 py-2  bg-bg-light border-slate-300 flex items-center justify-center  gap-2">
-          <FaPeopleGroup size={26} color="white" />
-          <p className="text-white">Stil Liderstva</p>
-        </div>
-        <div className=" cursor-pointer w-fit rounded-full px-4 py-2  bg-bg-light border-slate-300 flex items-center justify-center  gap-2">
-          <FaHeadSideVirus size={26} color="white" />
-          <p className="text-white">Emocionalna Inteligencija</p>
-        </div> */}
-        {/* <div className="border cursor-pointer shadow-md bg-bg-light border-slate-300 flex items-center justify-center rounded-full gap-4 w-fit px-4 py-2">
-          <FaPeopleGroup size={24} color="white" />
-          <p className="text-white">Test Liderstva</p>
-        </div>
-        <div className="border cursor-pointer shadow-md bg-bg-light border-slate-300 flex items-center justify-center rounded-full gap-4 w-fit px-4 py-2">
-          <FaHeadSideVirus size={24} color="white" />
-          <p className="text-white">Emocionalna Inteligencija</p>
-        </div> */}
       </div>
       <span className="inline-block mt-4  text-slate-400">
         Web-Skill Testovi:

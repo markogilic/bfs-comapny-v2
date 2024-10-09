@@ -7,7 +7,7 @@ export const ShowQuestion = () => {
   const { questions, index, currAnswer } = useSelector(
     (state: RootState) => state.test
   );
-  const { options, question, answer } = questions[index];
+  const { options, question } = questions[index];
   const hasAnswered = currAnswer !== null;
 
   return (
@@ -18,7 +18,7 @@ export const ShowQuestion = () => {
         <span className=" text-xl text-slate-50">{question}</span>
       </div>
 
-      {options.map((option, index) => (
+      {options.map((option, index: number) => (
         <button
           onClick={() => dispatch(newAnswer(index))}
           disabled={hasAnswered}

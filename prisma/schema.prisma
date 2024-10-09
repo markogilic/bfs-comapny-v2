@@ -35,6 +35,7 @@ model User {
   isTwoFactorEnabled Boolean @default(false)
   twoFactorConfirmation TwoFactorConfirmation?
   webSkillTestRecords WebSkillTestRecord[]
+  emoTestRecords EmoTestRecords[]
   @@map("users")  
 }
 
@@ -100,6 +101,19 @@ model WebSkillTestRecord {
   testType String
   testTime String
   testResult String
+  testDate DateTime
+ 
+}
+
+model EmoTestRecords {
+  id        String   @id @default(cuid())
+  userId  String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  testType String
+  totalPoints Int
+  tetPoints  Int
+  seiPoints  Int
+  eiePoints  Int
   testDate DateTime
  
 }

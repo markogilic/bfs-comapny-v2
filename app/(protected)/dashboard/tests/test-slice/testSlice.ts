@@ -88,6 +88,10 @@ export const testSlice = createSlice({
     setUserId: (state, action: PayloadAction<string>) => {
       state.userId = action.payload;
     },
+    setLoading: (state) => {
+      state.status = 'loading';
+      state.testType = '';
+    },
   },
 });
 
@@ -101,6 +105,7 @@ export const {
   back,
   setUserId,
   tick,
+  setLoading,
 } = testSlice.actions;
 
 export default testSlice.reducer;
