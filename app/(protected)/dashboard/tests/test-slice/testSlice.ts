@@ -16,7 +16,8 @@ interface InitialStatProp {
   currAnswer: number | null;
   points: number;
   wrongAnswers: wrongAnswers[];
-  testType: string;
+  testType: 'web';
+  testName: string;
   userId: string;
   timeRemaining: number;
 }
@@ -29,7 +30,8 @@ const initialState: InitialStatProp = {
   currAnswer: null,
   points: 0,
   wrongAnswers: [],
-  testType: '',
+  testType: 'web',
+  testName: '',
   userId: '',
   timeRemaining: 600,
 };
@@ -38,8 +40,8 @@ export const testSlice = createSlice({
   name: 'test',
   initialState,
   reducers: {
-    setTestType: (state, action: PayloadAction<string>) => {
-      state.testType = action.payload;
+    setTestName: (state, action: PayloadAction<string>) => {
+      state.testName = action.payload;
     },
 
     dataRecived: (state, action: PayloadAction<Question[]>) => {
@@ -76,7 +78,7 @@ export const testSlice = createSlice({
       state.timeRemaining--;
     },
     back: (state) => {
-      state.testType = '';
+      state.testName = '';
       state.questions = [];
       state.status = 'loading';
       state.index = 0;
@@ -90,7 +92,7 @@ export const testSlice = createSlice({
     },
     setLoading: (state) => {
       state.status = 'loading';
-      state.testType = '';
+      state.testName = '';
     },
   },
 });
@@ -101,7 +103,7 @@ export const {
   newAnswer,
   next,
   finished,
-  setTestType,
+  setTestName,
   back,
   setUserId,
   tick,

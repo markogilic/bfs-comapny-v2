@@ -5,9 +5,8 @@ import { webtestRecordCreate } from '@/actions/webtest-record-create';
 import { subtractTime } from '@/lib/utils';
 export const FinishButton = () => {
   const dispatch = useDispatch();
-  const { questions, points, userId, testType, timeRemaining } = useSelector(
-    (state: RootState) => state.test
-  );
+  const { questions, points, userId, testType, timeRemaining, testName } =
+    useSelector((state: RootState) => state.test);
   const result = Math.round((points / questions.length) * 100);
   const stringResult = result.toString();
 
@@ -29,10 +28,11 @@ export const FinishButton = () => {
 
     const dbTime = `${setMinutes}:${setSeconds}`;
     await webtestRecordCreate({
-      userId: userId,
-      testType: testType,
+      userId,
+      testType,
       testResult: stringResult,
       testTime: dbTime,
+      testName,
     });
     dispatch(finished());
   };

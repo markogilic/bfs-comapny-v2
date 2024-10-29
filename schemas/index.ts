@@ -52,8 +52,9 @@ export const NewPasswordSchema = z.object({
 export const TestRecordSchema = z.object({
   userId: z.string(),
   testType: z.string(),
+  testName: z.string(),
   testResult: z.string(),
-  testTime: z.string(),
+  testTime: z.optional(z.string()),
 });
 
 export const EmoTestSchema = z.object({

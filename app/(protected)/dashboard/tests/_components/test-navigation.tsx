@@ -5,7 +5,7 @@ import { FaHtml5 } from 'react-icons/fa';
 import { BsFiletypeCss } from 'react-icons/bs';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaReact } from 'react-icons/fa';
-import { setTestType } from '../test-slice/testSlice';
+import { setTestName } from '../test-slice/testSlice';
 import { useDispatch } from 'react-redux';
 
 export const TestNavigation = () => {
@@ -15,16 +15,22 @@ export const TestNavigation = () => {
     <>
       <span className="inline-block   text-slate-400">Soft Skill Testovi:</span>
       <div className="flex gap-4 mt-4">
-        <div className=" cursor-pointer w-[115px] h-[115px] border shadow-inner rounded-xl  bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2">
+        <div
+          onClick={() => dispatch(setTestName('assertion'))}
+          className=" cursor-pointer w-[115px] h-[115px] border shadow-inner rounded-xl  bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+        >
           <RiSpeakFill size={32} color="#495696" />
-          <p className="text-bg-light text-sm font-semibold">Komunikacija</p>
+          <p className="text-bg-light text-sm font-semibold">Asertivnost</p>
         </div>
-        <div className=" cursor-pointer w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2">
+        <div
+          onClick={() => dispatch(setTestName('lead'))}
+          className=" cursor-pointer w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+        >
           <FaPeopleGroup size={32} color="#495696" />
           <p className="text-bg-light font-semibold text-sm">Stil Liderstva</p>
         </div>
         <div
-          onClick={() => dispatch(setTestType('emo'))}
+          onClick={() => dispatch(setTestName('emo'))}
           className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
         >
           <FaHeadSideVirus size={30} color="#495696" />
@@ -38,21 +44,21 @@ export const TestNavigation = () => {
       </span>
       <div className="flex gap-4 mt-4">
         <div
-          onClick={() => dispatch(setTestType('html'))}
+          onClick={() => dispatch(setTestName('html'))}
           className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
         >
           <FaHtml5 size={32} color="#ec6e15" />
           <p className="text-btn-primary font-semibold  text-center">HTML</p>
         </div>
         <div
-          onClick={() => dispatch(setTestType('css'))}
+          onClick={() => dispatch(setTestName('css'))}
           className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
         >
           <BsFiletypeCss size={32} color="#ec6e15" />
           <p className="text-btn-primary font-semibold  text-center">CSS</p>
         </div>
         <div
-          onClick={() => dispatch(setTestType('javascript'))}
+          onClick={() => dispatch(setTestName('javascript'))}
           className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
         >
           <IoLogoJavascript size={32} color="#ec6e15" />
@@ -61,7 +67,7 @@ export const TestNavigation = () => {
           </p>
         </div>
         <div
-          onClick={() => dispatch(setTestType('react'))}
+          onClick={() => dispatch(setTestName('react'))}
           className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
         >
           <FaReact size={32} color="#ec6e15" />

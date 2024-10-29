@@ -99,7 +99,8 @@ model WebSkillTestRecord {
   userId  String
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   testType String
-  testTime String
+  testName String
+  testTime String  @default("NaN")
   testResult String
   testDate DateTime
  

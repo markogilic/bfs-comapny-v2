@@ -3,9 +3,15 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { useEffect, useState, useRef } from 'react';
 
-export const EmoResultProgressBar = ({ points }: { points: number }) => {
+export const EmoResultProgressBar = ({
+  points,
+  maxPoints,
+}: {
+  points: number;
+  maxPoints?: number;
+}) => {
   const [count, setCount] = useState<number>(0);
-  const MAXPOINTS = 56;
+  const MAXPOINTS = maxPoints ? maxPoints : 56;
   const result = (points / MAXPOINTS) * 100;
   const interval = useRef<any>(null);
 

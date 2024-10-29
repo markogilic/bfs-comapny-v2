@@ -1,12 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux';
 import type { RootState } from '@/lib/store';
-import { newAnswer } from '../../test-slice/emoTestSlice';
+import { newAnswer } from '../../test-slice/leadSlice';
 
-export const EmoShowQuestion = () => {
+export const LeadShowQuestion = () => {
   const dispatch = useDispatch();
   const { questions, index, currAnswer } = useSelector(
-    (state: RootState) => state.emoTest
+    (state: RootState) => state.leadTest
   );
+
   const { question, answers } = questions[index];
 
   return (
@@ -24,7 +25,7 @@ export const EmoShowQuestion = () => {
           }`}
           key={index}
         >
-          {answer.answer}
+          {answer.text}
         </button>
       ))}
     </div>

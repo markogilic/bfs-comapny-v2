@@ -16,6 +16,7 @@ export const webtestRecordCreate = async (
     data: {
       userId: data.userId,
       testType: data.testType,
+      testName: data.testName,
       testResult: data.testResult,
       testDate: new Date(),
       testTime: data.testTime,
