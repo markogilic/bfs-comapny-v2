@@ -1,7 +1,7 @@
 'use client';
 
 import { useDispatch } from 'react-redux';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { back } from '../../test-slice/assertionSlice';
 import { setLoading } from '../../test-slice/testSlice';
 
