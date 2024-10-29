@@ -8,9 +8,8 @@ import { webtestRecordCreate } from '@/actions/webtest-record-create';
 
 export const TestTimer = () => {
   //   const [testDuration, setTestDuration] = useState(20);
-  const { timeRemaining, questions, points, userId, testType } = useSelector(
-    (state: RootState) => state.test
-  );
+  const { timeRemaining, questions, points, userId, testType, testName } =
+    useSelector((state: RootState) => state.test);
   const disaptch = useDispatch();
   //   const { testDuration } = useSelector((state: RootState) => state.test);
   const minutes = Math.floor(timeRemaining / 60);
@@ -23,6 +22,7 @@ export const TestTimer = () => {
       testType: testType,
       testResult: stringResult,
       testTime: 'Istek vremana',
+      testName: testName,
     });
   };
 
