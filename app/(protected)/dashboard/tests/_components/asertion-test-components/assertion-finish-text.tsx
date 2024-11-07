@@ -14,7 +14,7 @@ export const AssertionFinishText = () => {
   }, [points]);
 
   return (
-    <div className="w-[600px] flex flex-col gap-4">
+    <div className=" lg:w-[600px] w-full flex flex-col gap-4">
       <h1 className="font-semibold">Hvala vam što ste završili test!</h1>
       {level ? <p>{assertionPointsData[level]}</p> : <p>Loading....</p>}
     </div>

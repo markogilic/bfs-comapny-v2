@@ -9,7 +9,7 @@ import { IoMdChatboxes } from 'react-icons/io';
 
 export const SideBarMenu = () => {
   return (
-    <div className=" border border-slate-300 px-2 py-2 bg-white shadow-md rounded-md w-[258px] h-fit">
+    <div className="   border border-slate-300 px-2 py-2 bg-white shadow-md rounded-md w-[258px] h-fit">
       <SideBarMenuLink label="Dashboard" pageLink="/dashboard">
         {' '}
         <TbLayoutDashboard size={26} />{' '}

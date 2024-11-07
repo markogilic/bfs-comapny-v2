@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { back, start } from '../../test-slice/leadSlice';
 import { setLoading } from '../../test-slice/testSlice';
-import { IoArrowBackCircleOutline } from 'react-icons/io5';
-import { BsInfoCircle } from 'react-icons/bs';
+
+import { TestInfoFrame } from '../static/TestInfoFrame';
 
 export const LeatTestInfo = () => {
   const dispatch = useDispatch();
@@ -12,25 +12,9 @@ export const LeatTestInfo = () => {
   };
 
   return (
-    <div className="max-w-[850px] bg-white shadow-inner border flex flex-col  gap-4   border-slate-300 px-8 py-4 rounded-xl">
-      <div className="flex justify-between items-center">
-        <span className="text-2xl font-semibold text-slate-400 ">
-          Na <span className="text-btn-primary">KORAK</span> do testa
-        </span>
-        <button onClick={handleBack}>
-          <IoArrowBackCircleOutline size={28} color="#d55617" />
-        </button>
-      </div>
-      <div className=" flex justify-between items-center bg-btn-primary/15 px-4 py-2 rounded-md text-btn-primary-hover ">
-        <p className="px-2">
-          {' '}
-          <span className="font-semibold">Napomena:</span> <br /> Obavezno pre
-          pocetka svakog testa detaljno procitajte upustvo.
-        </p>
-        <BsInfoCircle size={28} />
-      </div>
-      <div className="font-semibold text-slate-400 py-4">
-        <span className="text-black text-lg ">Liderstvo</span> je proces
+    <TestInfoFrame onClick={handleBack}>
+      <div className="font-semibold text-sm lg:text-base text-slate-400 py-4">
+        <span className="text-black text-lg  ">Liderstvo</span> je proces
         uticanja na ljude kako bi se postigli zajednički ciljevi. Dobri lideri
         inspirišu svoje timove, motivišu ih i usmeravaju ka uspehu kroz jasno
         definisanu viziju i smernice. Efikasan lider prilagođava svoj stil
@@ -46,10 +30,10 @@ export const LeatTestInfo = () => {
       </div>
       <button
         onClick={() => dispatch(start())}
-        className="text-white uppercase bg-bg-light px-4 py-2 rounded-md font-semibold shadow-md hover:bg-bg-darck transition-color"
+        className="text-white text-sm lg:text-base uppercase bg-bg-light px-4 py-2 rounded-md font-semibold shadow-md hover:bg-bg-darck transition-color"
       >
-        Zapocni Test
+        Započni Test
       </button>
-    </div>
+    </TestInfoFrame>
   );
 };

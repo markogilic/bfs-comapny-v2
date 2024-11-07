@@ -16,9 +16,9 @@ export const MainInfoTestFrame = () => {
   }, [session, dispatch]);
 
   return (
-    <div className=" flex ">
-      <div>
-        <p className=" text-slate-600 mt-10 text-[17px] ">
+    <div className=" lg:flex w-full h-full pt-[90px] lg:pt-0">
+      <div className="w-full ">
+        <p className=" text-slate-600 font-semibold lg:font-normal  lg:mt-10 lg:text-[17px]  text-sm px-4 ">
           Na ovom delu platforme omoguceno vam je da testirate svoje znanje
           putem testova iz oblasti web developmenta i soft veština
           (komunikacija, emocionalna inteligencija, liderstvo), ovde imate
@@ -27,10 +27,10 @@ export const MainInfoTestFrame = () => {
           svetu, sa ključnim interpersonalnim veštinama, koje su neophodne za
           efikasnu saradnju i liderstvo u profesionalnom okruženju.
         </p>
-        <hr className="my-6 h-0.5 border-t-0 bg-slate-200 dark:bg-white/10" />
+        <hr className=" hidden lg:block my-6 h-0.5 border-t-0 bg-slate-200 dark:bg-white/10" />
 
         <TestNavigation />
-        <hr className="my-8 h-0.5 border-t-0 bg-slate-200 dark:bg-white/10" />
+        <hr className=" hidden lg:block my-8 h-0.5 border-t-0 bg-slate-200 dark:bg-white/10" />
       </div>
 
       <Image
@@ -38,6 +38,7 @@ export const MainInfoTestFrame = () => {
         alt="main test image"
         width={500}
         height={500}
+        className="hidden lg:block"
       />
     </div>
   );

@@ -25,7 +25,7 @@ const TestsPage = () => {
   const type = useSelector((state: RootState) => state.test.testName);
 
   return (
-    <div className="flex justify-center  px-8 py-4  w-full bg-white shadow-md h-fit">
+    <div className="flex justify-center  lg:px-8 lg:py-4  lg:w-full w-full h-screen bg-white shadow-md lg:h-fit">
       {/* <TestInit type={type} /> */}
       {type === '' && <MainInfoTestFrame />}
       {type === 'emo' && <EmoTestInit />}

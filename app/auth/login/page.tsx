@@ -6,8 +6,8 @@ import Social from '@/app/_components/auth/social';
 
 const LoginPage = () => {
   return (
-    <div className=" h-screen flex flex-col space-y-4 justify-center items-center border-4 ">
-      <div className="w-[400px] py-12 px-12 rounded-lg border border-gray flex shadow-md flex-col gap-4  justify-center">
+    <div className=" h-screen flex flex-col space-y-4 justify-center items-center  ">
+      <div className="sm:w-[400px] w-[96%] sm:py-12 py-8 sm:px-12  px-6 rounded-lg border border-gray flex shadow-md flex-col gap-4  justify-center">
         <h2 className="text-lg font-semibold text-bg-light text-center">
           Ulogujte se
         </h2>

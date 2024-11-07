@@ -56,7 +56,7 @@ export const LeadFinishButton = () => {
       onClick={handleFinish}
       className="bg-bg-light text-white px-4 py-2 rounded-md w-fit hover:bg-bg-darck transition-colors"
     >
-      {isPending ? <ClipLoader size={20} color="#fff" /> : 'Finish'}
+      {isPending ? <ClipLoader size={20} color="#fff" /> : 'Završi test'}
     </button>
   );
 };

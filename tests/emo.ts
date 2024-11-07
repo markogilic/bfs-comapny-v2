@@ -12,7 +12,7 @@ export const emoTest: Question[] = [
     question: 'Osećam se često tužno, upadam u očajanje a da ne znam zašto.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -34,7 +34,7 @@ export const emoTest: Question[] = [
       'U stanju sam da se opustim i da u potpunosti konrolišem svoj život.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -55,7 +55,7 @@ export const emoTest: Question[] = [
     question: 'U bioskopu se lako smejem i plačem i uživam u tome.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -76,7 +76,7 @@ export const emoTest: Question[] = [
     question: 'Smetaju mi često emocije u svakodnevnom životu.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -97,7 +97,7 @@ export const emoTest: Question[] = [
     question: 'U besu lomim stvari ili napadam ljude.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -118,7 +118,7 @@ export const emoTest: Question[] = [
     question: 'Lako otkrivam kada me neko laže.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -139,7 +139,7 @@ export const emoTest: Question[] = [
     question: 'Umem da uživam u malim životnim zadovoljstvima.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -161,7 +161,7 @@ export const emoTest: Question[] = [
       'Emocije mogu da utiču na moje fizičko zdravlje I da utiču da se osećam fizički loše.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -183,7 +183,7 @@ export const emoTest: Question[] = [
       'Moje simpatije i antipatije su postojane, imam teškoću da promenim mišljenje o ljudima.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -204,7 +204,7 @@ export const emoTest: Question[] = [
     question: 'Kad me nešto nervira,mogu brzo da se smirim.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -225,7 +225,7 @@ export const emoTest: Question[] = [
     question: 'Kada javno govorim ne osećam nikakve fiziđke znake treme',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -247,7 +247,7 @@ export const emoTest: Question[] = [
       "Patim od 'sindroma žute minute': ako me nešto nervira, dugo ne govorim ništa, zatim naglo eksplodiram",
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -268,7 +268,7 @@ export const emoTest: Question[] = [
     question: 'Često sam neraspoložen(a).',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -290,7 +290,7 @@ export const emoTest: Question[] = [
       'Ako mi neko pravi probleme, mogu lako da pričam sa tom osobom o tome.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -311,7 +311,7 @@ export const emoTest: Question[] = [
     question: 'Kao dete sam često bila kapriciozna.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -332,7 +332,7 @@ export const emoTest: Question[] = [
     question: 'Znam da se dopadnem i to me čini popularnim (popularnom).',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM TAČNO',
         value: 4,
       },
       {
@@ -354,7 +354,7 @@ export const emoTest: Question[] = [
       "Koristim intuiciju u svojim relacijama sa drugima, 'osećam' dobre ljude.",
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -375,7 +375,7 @@ export const emoTest: Question[] = [
     question: 'Lako okrivljujem sebe',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -396,7 +396,7 @@ export const emoTest: Question[] = [
     question: 'Ljudi mi se dobrovoljno poveravaju',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -418,7 +418,7 @@ export const emoTest: Question[] = [
       'Često se događa da pod uticajem emocija radim suprotno svojim interesima.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -439,7 +439,7 @@ export const emoTest: Question[] = [
     question: 'Kada sam lošeg raspoloženja, teram sve ljude od sebe.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -460,7 +460,7 @@ export const emoTest: Question[] = [
     question: 'Teško prihvatam čak i osnovane kritike.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -481,7 +481,7 @@ export const emoTest: Question[] = [
     question: 'Imam osećaj za diplomatiju.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -503,7 +503,7 @@ export const emoTest: Question[] = [
       'Imam potrebu da se izrazim u umetnosti (slikanje, muzika, pisanje...), da bih oscećao (osećala) životno zadovoljstvo.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -524,7 +524,7 @@ export const emoTest: Question[] = [
     question: 'Kada sam uzbuđen (uzbuđena) dobrom vešću, patim od nesanice.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -545,7 +545,7 @@ export const emoTest: Question[] = [
     question: 'Mnogo radim i u svom slobodnom vremenu',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -566,7 +566,7 @@ export const emoTest: Question[] = [
     question: 'Često se molim ili meditiram.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -587,7 +587,7 @@ export const emoTest: Question[] = [
     question: "Imam često teškoću da kažem 'volim te'.",
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -608,7 +608,7 @@ export const emoTest: Question[] = [
     question: 'Odlazim često u prirodu.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -630,7 +630,7 @@ export const emoTest: Question[] = [
     question: 'U detinjstvu roditelji nisu imali sluha za moje emocije.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -652,7 +652,7 @@ export const emoTest: Question[] = [
       'Mogu dugo da budem ljut (ljuta) na osobe koje su mi učinile zlo.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -673,7 +673,7 @@ export const emoTest: Question[] = [
     question: 'Vodim računa o kvalitetu življenja.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -695,7 +695,7 @@ export const emoTest: Question[] = [
       'Prihvatam da se ne može sve znati, sve razumeti, sve prihvatiti, ni kod mene ni kod drugih.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -717,7 +717,7 @@ export const emoTest: Question[] = [
       'Ako sam tužan (tužna), pokušavam da podignem svoj moral umesto da se prepustim mrzovoljnosti.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -738,7 +738,7 @@ export const emoTest: Question[] = [
     question: 'Ako predlažem nešto u grupi, pažljivo me slušaju.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -760,7 +760,7 @@ export const emoTest: Question[] = [
       'Teško mi je da veštački pokazujem zadovoljstvo i lažne emocije kao što se često može videti na televizijskim emisijama.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -781,7 +781,7 @@ export const emoTest: Question[] = [
     question: 'Više volim da čitam romane nego eseje.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -803,7 +803,7 @@ export const emoTest: Question[] = [
       'Kada se prisećam lepih uspomena ponovo doživljavam jaku emociju.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -824,7 +824,7 @@ export const emoTest: Question[] = [
     question: 'Potrebno mi je vreme da shvatim da sam iznerviran(a).',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -846,7 +846,7 @@ export const emoTest: Question[] = [
       'Sposoban (sposobna) sam da saslušam i razumem gledišta svojih sagovornika, iako se sa njima ne slažem.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {
@@ -867,7 +867,7 @@ export const emoTest: Question[] = [
     question: 'Ponekad imam teškoću da razumem sopstvene reakcije.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 1,
       },
       {
@@ -889,7 +889,7 @@ export const emoTest: Question[] = [
       'Prilikom donošenja odluka imam veliko poverenje u svoju intuiciju.',
     answers: [
       {
-        answer: 'SAVIM TAČNO',
+        answer: 'SASVIM  TAČNO',
         value: 4,
       },
       {

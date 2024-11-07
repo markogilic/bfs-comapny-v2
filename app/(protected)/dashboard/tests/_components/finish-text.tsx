@@ -24,7 +24,7 @@ export const FinishText = () => {
           <p key={index}>{text.p}</p>
         ))
       ) : (
-        <p>Loding....</p>
+        <p>Učitava....</p>
       )}
     </div>
   );

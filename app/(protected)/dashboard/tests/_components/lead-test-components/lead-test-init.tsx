@@ -5,7 +5,7 @@ import type { RootState } from '@/lib/store';
 import { leadTest } from '@/tests/lead';
 import { loadQuestions } from '../../test-slice/leadSlice';
 import { LeatTestInfo } from './lead-test-info';
-import { LeadResultComponents } from './lead-result-componets';
+
 import { LeadTestHeader } from './lead-test-header';
 import { LeadProgressBar } from './lead-progress-bar';
 import { LeadShowQuestion } from './lead-show-question';
@@ -27,7 +27,6 @@ export const LeadTestInit = () => {
       {status === 'ready' && <LeatTestInfo />}
       {status === 'active' && (
         <div className="flex flex-col gap-4 bg-white px-28 py-14 rounded-md shadow-lg">
-          <LeadResultComponents />
           <LeadTestHeader />
           <LeadProgressBar />
           <LeadShowQuestion />

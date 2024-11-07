@@ -27,12 +27,12 @@ export const AssertionTestInit = () => {
       {status === 'loading' && <div>loading...</div>}
       {status === 'ready' && <AssertionInfoFrame />}
       {status === 'active' && (
-        <div className="flex flex-col gap-4 bg-white px-28 py-14 rounded-md shadow-xl">
+        <div className="flex flex-col gap-4 bg-white lg:px-28 px-4 py-14 mx-2 rounded-md shadow-xl">
           <AssertionTestHeader />
           <AssertionProgressBar />
           <AssertionShowQuestion />
-          <div className="flex justify-between">
-            <button className="bg-bg-light invisible text-white px-4 py-2 rounded-md w-fit hover:bg-bg-darck transition-colors">
+          <div className=" flex justify-between">
+            <button className="bg-bg-light lg:invisible lg:block hidden text-white px-4 py-2 rounded-md w-fit hover:bg-bg-darck transition-colors">
               fake button
             </button>
             <AssertionButton />

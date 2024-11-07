@@ -10,7 +10,7 @@ const MainNavigation = ({ session }: { session: Session | null }) => {
   const width = UseScreenWidth();
 
   if (width < 768) {
-    return <MobileNav />;
+    return <MobileNav session={session} />;
   }
   return (
     <>

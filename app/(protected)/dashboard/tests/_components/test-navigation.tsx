@@ -13,53 +13,58 @@ export const TestNavigation = () => {
 
   return (
     <>
-      <span className="inline-block   text-slate-400">Soft Skill Testovi:</span>
-      <div className="flex gap-4 mt-4">
+      <span className="flex mt-4  lg:justify-start  justify-center   text-slate-400">
+        Soft Skill Testovi:
+      </span>
+      <div className="lg:flex  lg:flex-row lg:gap-4 gap-2 mt-4 grid grid-cols-2">
         <div
           onClick={() => dispatch(setTestName('assertion'))}
-          className=" cursor-pointer w-[115px] h-[115px] border shadow-inner rounded-xl  bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+          className=" cursor-pointer lg:w-[115px] lg:h-[115px] lg:mx-0 lg:py-0 w-[90%] mx-auto py-2    border shadow-inner lg:rounded-xl rounded-md   bg-white border-slate-300 flex lg:flex-col  items-center justify-center  gap-2"
         >
           <RiSpeakFill size={32} color="#495696" />
           <p className="text-bg-light text-sm font-semibold">Asertivnost</p>
         </div>
         <div
           onClick={() => dispatch(setTestName('lead'))}
-          className=" cursor-pointer w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+          className=" cursor-pointer lg:w-[115px] lg:h-[115px] lg:mx-0 lg:py-0 w-[90%] mx-auto py-2    border shadow-inner lg:rounded-xl rounded-md   bg-white border-slate-300 flex lg:flex-col  items-center justify-center  gap-2"
         >
           <FaPeopleGroup size={32} color="#495696" />
           <p className="text-bg-light font-semibold text-sm">Stil Liderstva</p>
         </div>
         <div
           onClick={() => dispatch(setTestName('emo'))}
-          className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+          className=" cursor-pointer lg:w-[115px] lg:h-[115px] lg:mx-0 lg:py-0 w-[90%] mx-auto py-2    border shadow-inner lg:rounded-xl rounded-md   bg-white border-slate-300 flex lg:flex-col  items-center justify-center  gap-2"
         >
-          <FaHeadSideVirus size={30} color="#495696" />
-          <p className="text-bg-light font-semibold text-sm text-center">
+          <FaHeadSideVirus size={28} color="#495696" />
+          <p className="text-bg-light font-semibold text-sm text-center hidden lg:block">
             Emocionalna Inteligencija
+          </p>
+          <p className="lg:hidden block text-bg-light font-semibold text-sm">
+            EQ
           </p>
         </div>
       </div>
-      <span className="inline-block mt-4  text-slate-400">
+      <span className="flex mt-4  lg:justify-start  justify-center   text-slate-400">
         Web-Skill Testovi:
       </span>
-      <div className="flex gap-4 mt-4">
+      <div className="lg:flex  lg:flex-row lg:gap-4 gap-2 mt-4 grid grid-cols-2">
         <div
           onClick={() => dispatch(setTestName('html'))}
-          className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+          className=" cursor-pointer lg:w-[115px] lg:h-[115px] lg:mx-0 lg:py-0 w-[90%] mx-auto py-2    border shadow-inner lg:rounded-xl rounded-md   bg-white border-slate-300 flex lg:flex-col  items-center justify-center  gap-2"
         >
           <FaHtml5 size={32} color="#ec6e15" />
           <p className="text-btn-primary font-semibold  text-center">HTML</p>
         </div>
         <div
           onClick={() => dispatch(setTestName('css'))}
-          className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+          className=" cursor-pointer lg:w-[115px] lg:h-[115px] lg:mx-0 lg:py-0 w-[90%] mx-auto py-2    border shadow-inner lg:rounded-xl rounded-md   bg-white border-slate-300 flex lg:flex-col  items-center justify-center  gap-2"
         >
           <BsFiletypeCss size={32} color="#ec6e15" />
           <p className="text-btn-primary font-semibold  text-center">CSS</p>
         </div>
         <div
           onClick={() => dispatch(setTestName('javascript'))}
-          className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+          className=" cursor-pointer lg:w-[115px] lg:h-[115px] lg:mx-0 lg:py-0 w-[90%] mx-auto py-2    border shadow-inner lg:rounded-xl rounded-md   bg-white border-slate-300 flex lg:flex-col  items-center justify-center  gap-2"
         >
           <IoLogoJavascript size={32} color="#ec6e15" />
           <p className="text-btn-primary font-semibold  text-center">
@@ -68,27 +73,11 @@ export const TestNavigation = () => {
         </div>
         <div
           onClick={() => dispatch(setTestName('react'))}
-          className=" cursor-pointer pt-4 w-[115px] h-[115px] border shadow-inner rounded-xl bg-white border-slate-300 flex flex-col  items-center justify-center  gap-2"
+          className=" cursor-pointer lg:w-[115px] lg:h-[115px] lg:mx-0 lg:py-0 w-[90%] mx-auto py-2    border shadow-inner lg:rounded-xl rounded-md   bg-white border-slate-300 flex lg:flex-col  items-center justify-center  gap-2"
         >
           <FaReact size={32} color="#ec6e15" />
           <p className="text-btn-primary font-semibold  text-center">React</p>
         </div>
-        {/* <div className=" cursor-pointer rounded-full w-fit px-4 py-2 bg-btn-primary-hover border-slate-300  flex items-center justify-center  gap-2">
-          <FaHtml5 size={26} color="white" />
-          <p className="text-white">HTML</p>
-        </div>
-        <div className=" cursor-pointer rounded-full w-fit px-4 py-2 bg-btn-primary-hover border-slate-300  flex items-center justify-center  gap-2">
-          <BsFiletypeCss size={26} color="white" />
-          <p className="text-white">CSS</p>
-        </div>
-        <div className=" cursor-pointer rounded-full w-fit px-4 py-2 bg-btn-primary-hover border-slate-300  flex items-center justify-center  gap-2">
-          <IoLogoJavascript size={26} color="white" />
-          <p className="text-white">JavaScript</p>
-        </div>
-        <div className=" cursor-pointer rounded-full w-fit px-4 py-2 bg-btn-primary-hover border-slate-300  flex items-center justify-center  gap-2">
-          <IoLogoJavascript size={26} color="white" />
-          <p className="text-white">JavaScript</p>
-        </div> */}
       </div>
     </>
   );

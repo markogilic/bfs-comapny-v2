@@ -7,7 +7,7 @@ export const UserCard = async () => {
   const user = await currentUser();
 
   return (
-    <div className=" border border-slate-300 bg-white px-4 py-2 shadow-md rounded-md w-fit h-fit">
+    <div className="  border border-slate-300 bg-white px-4 py-2 shadow-md rounded-md w-fit h-fit">
       <div className="flex items-center gap-4">
         <div>
           <h1 className="text-slate-700 font-semibold text-md">{user?.name}</h1>

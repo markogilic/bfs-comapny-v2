@@ -30,7 +30,7 @@ export const TestInit = ({ type }: { type: string }) => {
         <InfoTestFrame type={type}>
           <button
             onClick={() => dispatch(start())}
-            className="text-white bg-bg-light px-4 py-2 rounded-md font-semibold shadow-md hover:bg-bg-darck transition-color"
+            className="text-white bg-bg-light text-sm lg-text-base px-4 py-2 rounded-md font-semibold shadow-md hover:bg-bg-darck transition-color"
           >
             Zapocni Test
           </button>
