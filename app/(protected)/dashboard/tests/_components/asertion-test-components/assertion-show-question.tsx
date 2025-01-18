@@ -7,14 +7,14 @@ export const AssertionShowQuestion = () => {
   const { questions, index, currAnswer } = useSelector(
     (state: RootState) => state.assertionTest
   );
-  const { text, answers } = questions[index];
+  const { question, answers } = questions[index];
 
   return (
     <div className="md:w-[800px] flex flex-col gap-4">
       <div className="shadow-inner border flex flex-col lg:text-xl lg:flex-row text-sm font-semibold text-slate-50 justify-start items-center gap-4  bg-bg-light border-slate-300  px-2 py-4 rounded-md">
-        <span className=" mr-2">Pitanje&nbsp;:&nbsp;{index + 1}</span>{' '}
+        <span className="lg:ml-4 mr-2">Pitanje&nbsp;:&nbsp;{index + 1}</span>{' '}
         {/* <div className="inline-block w-[2px] h-[90%] self-stretch bg-neutral-200 dark:bg-white/10"></div> */}
-        <span className="text-center">{text}</span>
+        <span className="text-center lg:text-start">{question}</span>
       </div>
       {answers.map((answer, index: number) => (
         <button
@@ -24,7 +24,7 @@ export const AssertionShowQuestion = () => {
           }`}
           key={index}
         >
-          {answer.option}
+          {answer.answer}
         </button>
       ))}
     </div>

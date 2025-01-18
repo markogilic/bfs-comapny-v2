@@ -27,8 +27,8 @@ export const EmoResultProgressBar = ({
   }, [count, result]);
 
   return (
-    <div className=" w-[200px] flex flex-col justify-center items-center gap-8 px-4   py-8 rounded-lg">
-      <div className=" w-[100px]  ">
+    <div className=" lg:w-[200px] w-[150px] flex flex-col justify-center items-center lg:gap-8 gap-4 px-4   py-8 rounded-lg">
+      <div className="  lg:w-[100px] w-[75px]  ">
         <CircularProgressbar
           value={count}
           text={`${count}%`}

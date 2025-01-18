@@ -7,7 +7,7 @@ const situacioni = [3, 5, 10, 15]; // Situacioni lider
 
 interface Question {
   question: string;
-  answers: { text: string; value: number }[];
+  answers: { answer: string; value: number }[];
 }
 
 type SortedResult = {

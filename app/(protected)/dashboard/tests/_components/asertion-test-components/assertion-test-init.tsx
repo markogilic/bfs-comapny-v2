@@ -4,42 +4,58 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import type { RootState } from '@/lib/store';
 import { assertion } from '@/tests/assertion';
-import { dataRecived } from '../../test-slice/assertionSlice';
+import { dataRecived, newAnswer } from '../../test-slice/assertionSlice';
+
+import { TestModal } from '../static/test-modal';
+import { TestHeader } from '../static/test-header';
+import { TestProgressBar } from '../static/test-progress-bar';
+import { TestBodyFrame } from '../static/test-body-frame';
+import { FakeBtn } from '../static/fake-btn';
 
 import { AssertionInfoFrame } from './assertion-info-frame';
-import { AssertionTestHeader } from './assertion-test-header';
-import { AssertionProgressBar } from './assertion-progress-bar';
 import { AssertionShowQuestion } from './assertion-show-question';
+
 import { AssertionButton } from './assertion-button';
 import { AssertionFinishedScreen } from './assertion-finished-screen';
 
 export const AssertionTestInit = () => {
   const dispatch = useDispatch();
-  const { status } = useSelector((state: RootState) => state.assertionTest);
+  const { status, index, questions, currAnswer } = useSelector(
+    (state: RootState) => state.assertionTest
+  );
   useEffect(() => {
     const questions = assertion;
-    console.log(questions);
+
     dispatch(dataRecived(questions));
   }, [dispatch]);
 
+  const numQuestion = questions.length;
+  const progressWidth =
+    ((index + Number(currAnswer !== null)) / numQuestion) * 100;
+
   return (
-    <div className=" fixed left-0 top-0 flex justify-center items-center bg-black/45 h-full w-full z-[1055] overflow-y-hidden overflow-x-hidden outline-none">
+    <TestModal>
       {status === 'loading' && <div>loading...</div>}
       {status === 'ready' && <AssertionInfoFrame />}
       {status === 'active' && (
-        <div className="flex flex-col gap-4 bg-white lg:px-28 px-4 py-14 mx-2 rounded-md shadow-xl">
-          <AssertionTestHeader />
-          <AssertionProgressBar />
+        <TestBodyFrame>
+          {/* <AssertionTestHeader /> */}
+          <TestHeader
+            testName="Test Asertivnosti"
+            index={index}
+            numQuestion={numQuestion}
+          />
+          {/* <AssertionProgressBar /> */}
+          <TestProgressBar progressWidth={progressWidth} />
           <AssertionShowQuestion />
+
           <div className=" flex justify-between">
-            <button className="bg-bg-light lg:invisible lg:block hidden text-white px-4 py-2 rounded-md w-fit hover:bg-bg-darck transition-colors">
-              fake button
-            </button>
+            <FakeBtn />
             <AssertionButton />
           </div>
-        </div>
+        </TestBodyFrame>
       )}
       {status === 'finished' && <AssertionFinishedScreen />}
-    </div>
+    </TestModal>
   );
 };

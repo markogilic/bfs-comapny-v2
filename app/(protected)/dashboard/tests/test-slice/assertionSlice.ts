@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface Question {
-  answers: { option: string; value: number }[];
-  text: string;
+  answers: { answer: string; value: number }[];
+  question: string;
 }
 
 interface InitialStatProp {

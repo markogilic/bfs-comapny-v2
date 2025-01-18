@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import type { RootState } from '@/lib/store';
 import { PieChart, Pie, Cell } from 'recharts';
 import { calcPrecentige } from '@/lib/utils';
+import { UseScreenWidth } from '@/app/hooks/screen-width';
 import { LeadResultData } from '@/result-data/lead-result-data';
 import {
   Accordion,
@@ -29,6 +30,7 @@ type SortedResult = {
 };
 
 export const LeadFinishedScreen = () => {
+  const screenWidth = UseScreenWidth();
   const { sortedResult } = useSelector(
     (state: RootState) => state.leadTest
   ) as { sortedResult: SortedResult[] };
@@ -61,10 +63,13 @@ export const LeadFinishedScreen = () => {
   };
 
   return (
-    <div className="bg-white w-[1100px] shadow-inner flex flex-col border border-slate-300  gap-4 px-4 py-4 rounded-xl">
-      <div className="flex">
-        <div className="flex flex-col justify-center items-center p-4">
-          <PieChart width={250} height={250}>
+    <div className="bg-white lg:w-[1100px] w-[96%] h-fit shadow-inner flex flex-col border border-slate-300  gap-4 px-4 py-4  rounded-xl">
+      <div className="flex flex-col lg:flex-row">
+        <div className="flex lg:flex-col justify-center items-center">
+          <PieChart
+            width={screenWidth < 500 ? 150 : 250}
+            height={screenWidth < 500 ? 150 : 250}
+          >
             <Pie dataKey="value" data={sortedResult} fill="#ec6e15">
               {sortedResult.map((entry, index) => (
                 <Cell
@@ -76,11 +81,11 @@ export const LeadFinishedScreen = () => {
           </PieChart>
 
           {/* result sstats */}
-          <div className="flex gap-4">
+          <div className="flex flex-col lg:flex-row lg:gap-4 gap-1">
             {sortedResult.map((result, index) => (
               <div
                 key={result.name}
-                className={`${textColor[index]} uppercase mb-2 font-semibold flex flex-col items-center justify-center text-sm `}
+                className={`${textColor[index]} uppercase mb-2 font-semibold gap-4 lg:gap-0 flex flex-row lg:flex-col items-center justify-center lg:text-sm text-xs `}
               >
                 <p>{result.name}</p>
                 <p>
@@ -96,13 +101,13 @@ export const LeadFinishedScreen = () => {
             ))}
           </div>
         </div>
-        <div className="inline-block h-auto py-4 min-h-[1em]  w-0.5 self-stretch bg-neutral-200 dark:bg-white/10"></div>
-        <div className="w-full px-5 py-4">
+        <div className="lg:inline-block hidden  h-auto py-4 min-h-[1em]  w-0.5 self-stretch bg-neutral-200 dark:bg-white/10"></div>
+        <div className="w-full lg:px-5 lg:py-4">
           {/* {highestValue.length  === 1 ? (
           <p>{LeadResultData[highestValue[0]]}</p>
         ):(highestValue.map((result, index) => ())} */}
           {highestValue.length === 1 ? (
-            <p className="font-semibold text-base text-slate-500  tracking-wider">
+            <p className="font-semibold lg:text-base text-sm text-slate-500  tracking-wider">
               {LeadResultData[highestValue[0].name]}
             </p>
           ) : (
@@ -115,16 +120,16 @@ export const LeadFinishedScreen = () => {
                 //   {LeadResultData[result.name]}
                 // </p>
                 <AccordionItem value={result.name} key={index}>
-                  <AccordionTrigger className="font-semibold text-md text-slate-600  uppercase">
+                  <AccordionTrigger className="font-semibold lg:text-md text-sm text-slate-600  uppercase">
                     <div className=" w-full flex justify-between items-center">
                       {result.name}
-                      <span className="text-sm mr-2 lowercase ">
+                      <span className="lg:text-sm text-xs mr-2 lowercase ">
                         procitaj vise
                       </span>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="font-semibold text-base text-slate-500  tracking-wider">
+                    <p className="font-semibold lg:text-base text-[12px] text-slate-500  tracking-wider">
                       {LeadResultData[result.name]}
                     </p>
                   </AccordionContent>
@@ -137,16 +142,16 @@ export const LeadFinishedScreen = () => {
         ))} */}
         </div>
       </div>
-      <div className="flex gap-4">
+      <div className="lg:flex gap-4 grid grid-cols-2">
         <button
           onClick={goNewTest}
-          className="bg-bg-light text-white shadow-lg px-4 py-2 rounded-xl w-fit hover:bg-bg-darck transition-colorss"
+          className="bg-bg-light text-white shadow-lg px-4 py-2  lg:rounded-xl rounded-md lg:w-fit w-full text-xs font-semibold lg:text-base lg:font-normal hover:bg-bg-darck transition-colorss"
         >
           Izaberi novi test
         </button>
         <button
           onClick={goDashBoard}
-          className="bg-bg-light text-white  px-4 py-2 rounded-xl w-fit hover:bg-bg-darck transition-colorss"
+          className="bg-bg-light text-white  px-4 py-2 lg:rounded-xl rounded-md lg:w-fit w-full hover:bg-bg-darck transition-colorss text-xs font-semibold lg:text-base lg:font-normal "
         >
           Dashboard
         </button>

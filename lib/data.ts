@@ -9,6 +9,9 @@ import DigitalnaBasta from '@/public/logos/digitalna-basta.png';
 import Sena from '@/public/logos/sena.jpg';
 import RibiliLogo from '@/public/logos/ribili_logo.png';
 import KVLlogo from '@/public/logos/kvl_logo_crop.jpg';
+import moje_more from '@/public/logos/moje_more.png';
+import nasa_deca from '@/public/logos/nasa_deca.png';
+import hey_o from '@/public/logos/hey-o.png';
 
 // image of students
 
@@ -71,6 +74,9 @@ export const logosUrl = [
   Sena,
   RibiliLogo,
   KVLlogo,
+  moje_more,
+  hey_o,
+  nasa_deca,
 ] as const;
 
 export const students = [
@@ -133,9 +139,9 @@ export const topPrograms = [
     title: 'FINANSIJSKI KONTROLING ZA MENADŽERE',
     desc: 'Program je dizajniran za obuku menadžera u ključnim veštinama finansijskog kontrolinga. Kroz praktične primere polaznici će steći znanja potrebna za donošenje ključnih poslovnih odluka.',
     stats: {
-      duration: '4 nedelje',
-      location: ' Online',
-      price: '250e',
+      duration: '3 meseca',
+      location: 'Uživo/Online',
+      price: '750e',
     },
     fullDesc: {
       main: 'Ukoliko želiš dodatna znanja iz finansijskog kontrolinga i rezultata poslovanja uz mentora koji će pratiti tvoj razvoj, ovo je program za tebe. Bez obzira da li gradiš karijeru u oblasti finansija ili ne, ova znanja će upotpuniti tvoj portfolio menadžera, a individualni rad sa mentorom pružiće ti nove vidike i prilike u budućnosti',
@@ -156,14 +162,14 @@ export const topPrograms = [
   {
     id: 2,
     imageUrl: fzpImage,
-    type: 'Grupni program',
+    type: 'Individualni program',
     typeData: 'finansije',
-    title: 'finansije za preduzetnike',
+    title: 'biznis i finansije za preduzetnike',
     desc: 'Ovaj program pruža ključna znanja o upravljanju finansijama u malim i srednjim preduzećima. Učesnici će naučiti kako efikasno planirati budžet, pratiti troškove i optimizovati profitabilnost.',
     stats: {
-      duration: '3 nedelje',
-      location: ' Online',
-      price: '180e',
+      duration: '3 meseca',
+      location: ' Uživo/Online',
+      price: '1200e',
     },
     fullDesc: {
       main: 'Ovaj program je osmišljen da pruži preduzetnicima osnovna i napredna znanja iz oblasti finansija kako bi efikasno upravljali svojim poslovanjem. Program je namenjen preduzetnicima, vlasnicima malih i srednjih preduzeća, kao i svima koji razmišljaju o pokretanju sopstvenog biznisa i žele da steknu čvrste finansijske osnove za uspešno poslovanje.',
@@ -188,13 +194,13 @@ export const topPrograms = [
     id: 3,
     imageUrl: emolidImage,
     typeData: 'soft-skills',
-    type: 'Grupne edukacije',
+    type: 'Grupna edukacije',
     title: 'Emocionalna inteligencija i liderstvo',
     desc: 'Program je namenjen liderima koji žele da razviju emocionalne veštine za efikasnije upravljanje timovima. Polaznici će naučiti kako da regulišu emocije, u cilju unapređenja komunikacije i odlučivanja.',
     stats: {
       duration: 'Jednodnevna edukacija',
-      location: 'Online',
-      price: '120e',
+      location: 'Uživo',
+      price: 'Na upit',
     },
     fullDesc: {
       main: 'Istraživanja pokazuju da 67% svih veština koje su lideru potrebne za poslovni rezultat i uspeh, zasnivaju se na emocionalnoj inteligenciji. Zašto je to tako? Uspešno vođenje tima je više emotivan, nego kongitivan proces, jer lideri imaju bolje rezultate u motivaciji članova tima putem emocije, u odnosu na korišćenje logike. Ukoliko želiš da naučiš više o emocionalnoj inteligenciji i efikasnom vođenju timova, da uložiš u razvoj svojih liderskih veština, ovo je prava edukacija za tebe.',
@@ -215,47 +221,47 @@ export const topPrograms = [
       optionalFileds: [],
     },
   },
-  {
-    id: 9,
-    imageUrl: uspesnoPregovarnje,
-    typeData: 'soft-skills',
-    type: 'Grupne edukacije',
-    title: 'Veštine uspešnog pregovaranja',
-    desc: 'Ova edukacija pruža polaznicima dubok uvid u tehnike i strategije koje su ključne za postizanje efikasnih i produktivnih pregovora u različitim poslovnim situacijama.',
-    stats: {
-      duration: 'Jednodnevna edukacija',
-      location: 'Online',
-      price: '130e',
-    },
-    fullDesc: {
-      main: 'Ova edukacija pruža polaznicima dubok uvid u tehnike i strategije koje su ključne za postizanje efikasnih i produktivnih pregovora u različitim poslovnim situacijama. Tokom kursa, polaznici će naučiti kako da identifikuju svoje ciljeve, razumeju interese suprotne strane, razvijaju pregovaračku strategiju i efikasno komuniciraju svoje stavove.',
-      tags: [],
-      titleList: 'Edukacija obuhvata sledeće teme:',
-      list: [
-        'Razumevanje procesa pregovaranja, definisanje ciljeva i strategija.',
-        'Razvijanje veština slušanja, postavljanja pitanja i izražavanja stavova jasno i ubedljivo.',
-        'Procena situacije, identifikacija interesa i potreba obe strane, prepoznavanje mogućih kompromisa.',
-        'Rešavanje konflikata, odnosno upotreba tehnika za rešavanje sukoba i prevazilaženje prepreka tokom pregovora.',
-        'Zaključivanje sporazuma, odnosno tehnike za postizanje obostrano prihvatljivih rešenja i zaključivanje uspešnih pregovora.',
-      ],
-      optionalFileds: [],
-      final:
-        'Kroz kombinaciju teorijskog znanja, praktičnih vežbi i studija slučaja, polaznici će razviti svoje veštinepregovaranja i steknuti samopouzdanje u različitim pregovaračkim situacijama. Kurs je namenjenprofesionalcima iz različitih industrija, menadžerima, preduzetnicima i svima koji žele da unaprede svojusposobnost da uspešno pregovaraju i postižu svoje ciljeve.',
-    },
-  },
+  // {
+  //   id: 9,
+  //   imageUrl: uspesnoPregovarnje,
+  //   typeData: 'soft-skills',
+  //   type: 'Grupne edukacije',
+  //   title: 'Veštine uspešnog pregovaranja',
+  //   desc: 'Ova edukacija pruža polaznicima dubok uvid u tehnike i strategije koje su ključne za postizanje efikasnih i produktivnih pregovora u različitim poslovnim situacijama.',
+  //   stats: {
+  //     duration: 'Jednodnevna edukacija',
+  //     location: 'Online',
+  //     price: '130e',
+  //   },
+  //   fullDesc: {
+  //     main: 'Ova edukacija pruža polaznicima dubok uvid u tehnike i strategije koje su ključne za postizanje efikasnih i produktivnih pregovora u različitim poslovnim situacijama. Tokom kursa, polaznici će naučiti kako da identifikuju svoje ciljeve, razumeju interese suprotne strane, razvijaju pregovaračku strategiju i efikasno komuniciraju svoje stavove.',
+  //     tags: [],
+  //     titleList: 'Edukacija obuhvata sledeće teme:',
+  //     list: [
+  //       'Razumevanje procesa pregovaranja, definisanje ciljeva i strategija.',
+  //       'Razvijanje veština slušanja, postavljanja pitanja i izražavanja stavova jasno i ubedljivo.',
+  //       'Procena situacije, identifikacija interesa i potreba obe strane, prepoznavanje mogućih kompromisa.',
+  //       'Rešavanje konflikata, odnosno upotreba tehnika za rešavanje sukoba i prevazilaženje prepreka tokom pregovora.',
+  //       'Zaključivanje sporazuma, odnosno tehnike za postizanje obostrano prihvatljivih rešenja i zaključivanje uspešnih pregovora.',
+  //     ],
+  //     optionalFileds: [],
+  //     final:
+  //       'Kroz kombinaciju teorijskog znanja, praktičnih vežbi i studija slučaja, polaznici će razviti svoje veštinepregovaranja i steknuti samopouzdanje u različitim pregovaračkim situacijama. Kurs je namenjenprofesionalcima iz različitih industrija, menadžerima, preduzetnicima i svima koji žele da unaprede svojusposobnost da uspešno pregovaraju i postižu svoje ciljeve.',
+  //   },
+  // },
 
   {
     id: 5,
     imageUrl: IntFrontEnd,
     typeData: 'web-development',
-    type: 'Grupne edukacije',
+    type: 'Grupna edukacije',
     title: 'Uvod u Frontend',
     desc: 'Ovaj kurs pruža osnovno upoznavanje sa front-end programiranjem, pokrivajući ključne tehnologije kao što su HTML, CSS i JavaScript.',
     stats: {
       duration: '4 nedelje',
 
       location: 'Online',
-      price: '150e',
+      price: '250e',
     },
     fullDesc: {
       main: 'Kurs "Uvod u Frontend" je osmišljen da studentima pruži sveobuhvatan uvod u svet web developmenta, sa posebnim fokusom na frontend tehnologije. Cilj kursa je da polaznici steknu osnovna znanja i veštine potrebne za izradu modernih, interaktivnih i responzivnih web sajtova. Tokom kursa, studenti će se upoznati sa ključnim tehnologijama i alatima koje web developeri koriste svakodnevno.',
@@ -283,13 +289,13 @@ export const topPrograms = [
     id: 6,
     imageUrl: HtmlCssJs,
     typeData: 'web-development',
-    type: 'Grupne edukacije',
-    title: ' Osnove HTML, CSS, JavaScript',
+    type: 'Grupna edukacije',
+    title: 'HTML, CSS, JavaScript',
     desc: 'Ovaj kurs pruža temeljno upoznavanje sa osnovnim web tehnologijama HTML, CSS i JavaScript, omogućavajući polaznicima da kreiraju i stilizuju interaktivne web stranice.',
     stats: {
       duration: '12 nedelja',
       location: 'Online',
-      price: '350e',
+      price: '750e',
     },
     fullDesc: {
       main: 'Kurs "Osnove HTML, CSS i JavaScripta" pruža temeljno razumevanje tri ključne tehnologije neophodne za razvoj modernih web stranica. Ovaj kurs je namenjen apsolutnim početnicima u web developmentu i cilj mu je da polaznike uvede u svet frontend tehnologija i pripremi ih za dalje napredovanje u ovoj oblasti.',
@@ -309,13 +315,13 @@ export const topPrograms = [
     id: 7,
     imageUrl: reactJS,
     typeData: 'web-development',
-    type: 'Grupne edukacije',
-    title: 'Osnove React JS',
+    type: 'Grupna edukacije',
+    title: 'React JS',
     desc: 'Ovaj kurs pruža osnovno upoznavanje sa React JS bibliotekom, omogućavajući polaznicima da kreiraju interaktivne web aplikacije.',
     stats: {
       duration: '12 nedelja',
       location: 'Online',
-      price: '350e',
+      price: '750e',
     },
     fullDesc: {
       main: 'Kurs "Osnove ReactJS-a" je namenjen polaznicima koji žele da se upoznaju sa popularnim JavaScript framework-om za izgradnju korisničkih interfejsa.Tokom kursa, učesnici će naučiti osnovne koncepte React-a, kao što su komponente, stanje (state) i svojstva (props), koji su ključni za razvoj modernih web aplikacija.Fokus će biti na praktičnim vežbama i projektima, gde će polaznici implementirati naučene veštine u stvarnim scenarijima.Kurs takođe obuhvata upotrebu JSX-a, jezika za pisanje HTML-a unutar JavaScripta, kao i osnove rada sa React-ovim životnim ciklusom komponenti.Na kraju kursa, polaznici će biti osposobljeni da samostalno razvijaju jednostavne React aplikacije i da nastave sa naprednijim temama u ReactJS-u.',
@@ -344,13 +350,13 @@ export const topPrograms = [
     id: 8,
     imageUrl: programMentorstva,
     typeData: 'individual',
-    type: 'Individualni programi',
+    type: 'Individualni program',
     title: 'Program mentorstva',
     desc: '"Program mentorstva" nudi podršku za razvoj profesionalnih veština kroz individualni pristup. Namenjen je profesionalcima koji žele da unaprede tehničke, liderske ili komunikacione veštine.',
     stats: {
       duration: '4 nedelje',
-      location: 'Online',
-      price: '200e',
+      location: 'Uživo/Online',
+      price: '250e',
     },
     fullDesc: {
       main: 'Otkrijte svoj puni potencijal kroz naš sveobuhvatni "Program mentorstva". Ovaj program je osmišljen da pruži prilagođenu podršku i vođenje za razvoj specifičnih veština koje su ključne za vaš lični i profesionalni napredak.',

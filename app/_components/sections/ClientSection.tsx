@@ -1,6 +1,6 @@
 'use client';
 import SubHeading from '../ui/subHeading';
-import EmblaCarousel from '../embla-carousel/EmblaCarousel';
+
 import { EmblaOptionsType } from 'embla-carousel';
 import { UseScreenWidth } from '@/app/hooks/screen-width';
 import MobileClientSection from './MobileClientSection';

@@ -17,7 +17,7 @@ export const LeadButton = () => {
     return (
       <button
         onClick={() => disaptch(next())}
-        className="bg-bg-light text-white px-4 py-2 rounded-md w-fit hover:bg-bg-darck transition-colors"
+        className="bg-bg-light text-white px-4 py-2 rounded-md lg:w-fit w-full hover:bg-bg-darck transition-colors "
       >
         Sledeće pitanje
       </button>
